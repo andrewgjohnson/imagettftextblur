@@ -10,8 +10,8 @@ To get started simply add a reference in your code to imagettftextblur.php and c
 
 ## Example
 
-    imagettftext($image,20,0,0,0,$color,$font,$string); // standard method to add text to a GD image
-    imagettftextblur($image,20,0,0,0,$color,$font,$string); // this will work the same as the line above
+    imagettftext($image,20,0,0,0,$color,$font,$string);       // standard method to add text to a GD image
+    imagettftextblur($image,20,0,0,0,$color,$font,$string);   // this will work the same as the line above
     imagettftextblur($image,20,0,0,0,$color,$font,$string,5); // method to add blurred text to a GD image
 
 There are a number of other examples included in the repository.

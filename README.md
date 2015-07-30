@@ -16,6 +16,10 @@ To get started simply add a reference in your code to imagettftextblur.php and c
 
 There are a number of other examples included in the repository.
 
+## Help Requests
+
+Please post any questions or problems using [the imagettftextblur tag on stackoverflow.com](https://stackoverflow.com/tags/imagettftextblur) if you need help.
+
 ## Acknowledgements
 
 This project was started by [Andrew G. Johnson](https://github.com/andrewgjohnson), contact via [Twitter](http://twitter.com/andrewgjohnson), [Email](mailto:andrew@andrewgjohnson.com), [GitHub](https://github.com/andrewgjohnson) or [Online](http://www.andrewgjohnson.com/)

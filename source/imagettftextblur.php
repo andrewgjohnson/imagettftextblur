@@ -24,6 +24,9 @@ if (!function_exists('imagettftextblur'))
 		$blur_intensity = !is_null($blur_intensity) && is_numeric($blur_intensity) ? (int)$blur_intensity : 0;
 		if ($blur_intensity > 0)
 		{
+			$color_values = imagecolorsforindex($image, $color);
+			$color_opacity = ( (127-$color_values['alpha']) / 127 );
+
 			$text_shadow_image = imagecreatetruecolor(imagesx($image),imagesy($image));
 			imagefill($text_shadow_image,0,0,imagecolorallocate($text_shadow_image,0x00,0x00,0x00));
 			imagettftext($text_shadow_image,$size,$angle,$x,$y,imagecolorallocate($text_shadow_image,0xFF,0xFF,0xFF),$fontfile,$text);
@@ -34,6 +37,7 @@ if (!function_exists('imagettftextblur'))
 				for ($y_offset = 0;$y_offset < imagesy($text_shadow_image);$y_offset++)
 				{
 					$visibility = (imagecolorat($text_shadow_image,$x_offset,$y_offset) & 0xFF) / 255;
+					$visibility *= $color_opacity;
 					if ($visibility > 0)
 						imagesetpixel($image,$x_offset,$y_offset,imagecolorallocatealpha($image,($color >> 16) & 0xFF,($color >> 8) & 0xFF,$color & 0xFF,(1 - $visibility) * 127));
 				}

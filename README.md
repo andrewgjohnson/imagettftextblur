@@ -22,9 +22,17 @@ Please post any questions or problems using [the imagettftextblur tag on stackov
 
 ## Acknowledgements
 
-This project was started by [Andrew G. Johnson](https://github.com/andrewgjohnson), contact via [Twitter](http://twitter.com/andrewgjohnson), [Email](mailto:andrew@andrewgjohnson.com), [GitHub](https://github.com/andrewgjohnson) or [Online](http://www.andrewgjohnson.com/)
+This project was started by [Andrew G. Johnson](https://github.com/andrewgjohnson)
+
+Full list of contributors:
+ * [Andrew G. Johnson](https://github.com/andrewgjohnson)
+ * [@vHeemstra](https://github.com/vHeemstra)
 
 ## Changelog
+
+######v1.1.0 (April 7, 2016)
+ * Fixed issue that caused the alpha of colors to be ignored (fixed by [@vHeemstra](https://github.com/vHeemstra))
+ * Added PNG images for each example of expected output
 
 ######v1.0.0 (March 19, 2013)
  * Intial release of imagettftextblur

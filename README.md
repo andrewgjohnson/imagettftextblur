@@ -6,7 +6,7 @@ imagettftextblur is a drop in replacement for imagettftext with an added paramet
 
 ## Usage
 
-To get started simply add a reference in your code to imagettftextblur.php and change all calls from imagettftext to imagettftextblur.  To add blur simply pass an integer greater than zero as the final parameter.
+To get started simply add a reference in your code to imagettftextblur.php and change all calls from imagettftext to imagettftextblur.  To add blur simply pass an integer greater than zero as the $blur_intensity parameter.
 
 ## Example
 
@@ -22,13 +22,17 @@ Please post any questions or problems using [the imagettftextblur tag on stackov
 
 ## Acknowledgements
 
-This project was started by [Andrew G. Johnson](https://github.com/andrewgjohnson)
+This project was started by [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
 
 Full list of contributors:
- * [Andrew G. Johnson](https://github.com/andrewgjohnson)
- * [@vHeemstra](https://github.com/vHeemstra)
+ * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
+ * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+######v1.2.0 (November 8, 2016)
+ * Added new optional parameter called $blur_filter to allow different filters to be used
+ * Calls to imagettftextblur() with a valid $blur_intensity value now return an array of coordinates based on [imagettftext()](http://php.net/imagettftext)'s return values
 
 ######v1.1.0 (April 7, 2016)
  * Fixed issue that caused the alpha of colors to be ignored (fixed by [@vHeemstra](https://github.com/vHeemstra))

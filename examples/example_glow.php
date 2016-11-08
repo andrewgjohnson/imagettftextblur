@@ -8,7 +8,7 @@ else
 $height = 300;
 $width = 600;
 $size = 20;
-$font = 'arial.ttf';
+$font = rtrim(dirname(__FILE__),'/\\') . '/arial.ttf';
 $string = 'This is an example that is glowing';
 
 $text_dimensions = imagettfbbox($size,0,$font,$string);

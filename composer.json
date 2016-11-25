@@ -1,0 +1,25 @@
+{
+    "name": "andrewgjohnson/imagettftextblur",
+    "type": "library",
+    "description": "imagettftextblur is a drop in replacement for imagettftext with an added parameter to add blur, glow and shadow effects to your PHP GD images",
+    "keywords": ["log","logging"],
+    "homepage": "https://github.com/andrewgjohnson/imagettftextblur",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew G Johnson",
+            "email": "andrew@johnson.com",
+            "homepage": "http://www.andrewgjohnson.com/",
+            "role": "Project Lead"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Monolog": "src"
+        }
+    }
+}

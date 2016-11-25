@@ -62,6 +62,7 @@ if (!function_exists('imagettftextblur')) {
                     }
                 }
             }
+
             imagedestroy($text_shadow_image);
 
             return $return_array;

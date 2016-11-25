@@ -44,6 +44,9 @@ Full list of contributors:
 
 ## Changelog
 
+######v1.2.4 (November 24, 2016)
+ * No new features; we had to do a version bump to fix an issue with our Composer package
+
 ######v1.2.3 (November 24, 2016)
  * Fixed autoload issue when installed via Composer
 

@@ -1,9 +1,10 @@
 <?php
 
-if (file_exists('../source/imagettftextblur.php'))
+if (file_exists('../source/imagettftextblur.php')) {
     require_once('../source/imagettftextblur.php');
-else
+} else {
     die('imagettftextblur.php not found');
+}
 
 $height = 300;
 $width = 600;

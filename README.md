@@ -20,6 +20,16 @@ There are a number of other examples included in the repository.
 
 This project offers support for the [Composer](https://getcomposer.org/) dependency manager.  You can find the imagettftextblur package online at [https://packagist.org/packages/andrewgjohnson/imagettftextblur](https://packagist.org/packages/andrewgjohnson/imagettftextblur).
 
+### Install using Composer
+
+Either run this command
+
+    composer require andrewgjohnson/imagettftextblur
+
+or add this so the `require` section of your composer.json
+
+    "andrewgjohnson/imagettftextblur":"1.*"
+
 ## Help Requests
 
 Please post any questions or problems using [the imagettftextblur tag on stackoverflow.com](https://stackoverflow.com/tags/imagettftextblur) if you need help.

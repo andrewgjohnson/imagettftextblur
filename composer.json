@@ -13,9 +13,14 @@
     "authors": [
         {
             "name": "Andrew G Johnson",
-            "email": "andrew@johnson.com",
+            "email": "andrew@andrewgjohnson.com",
             "homepage": "http://www.andrewgjohnson.com/",
             "role": "Project Lead"
+        },
+        {
+            "name": "Philip van Heemstra",
+            "homepage": "https://github.com/vHeemstra",
+            "role": "Contributor"
         }
     ],
     "require": {

@@ -16,6 +16,10 @@ To get started simply add a reference in your code to imagettftextblur.php and c
 
 There are a number of other examples included in the repository.
 
+## Composer
+
+This project offers support for the [Composer](https://getcomposer.org/) dependency manager.  You can find the imagettftextblur package online at [https://packagist.org/packages/andrewgjohnson/imagettftextblur](https://packagist.org/packages/andrewgjohnson/imagettftextblur).
+
 ## Help Requests
 
 Please post any questions or problems using [the imagettftextblur tag on stackoverflow.com](https://stackoverflow.com/tags/imagettftextblur) if you need help.
@@ -29,6 +33,9 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+######v1.2.2 (November 24, 2016)
+ * Added Composer support
 
 ######v1.2.1 (November 24, 2016)
  * Added [PSR-1](http://www.php-fig.org/psr/psr-1/) & [PSR-2](http://www.php-fig.org/psr/psr-2/) support

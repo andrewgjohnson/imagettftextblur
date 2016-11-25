@@ -10,9 +10,9 @@ To get started simply add a reference in your code to imagettftextblur.php and c
 
 ## Example
 
-    imagettftext($image,20,0,0,0,$color,$font,$string);       // standard method to add text to a GD image
-    imagettftextblur($image,20,0,0,0,$color,$font,$string);   // this will work the same as the line above
-    imagettftextblur($image,20,0,0,0,$color,$font,$string,5); // method to add blurred text to a GD image
+    imagettftext($image, 20, 0, 0, 0, $color, $font, $string);        // standard method to add text to a GD image
+    imagettftextblur($image, 20, 0, 0, 0, $color, $font, $string);    // this will work the same as the line above
+    imagettftextblur($image, 20, 0, 0, 0, $color, $font, $string, 5); // method to add blurred text to a GD image
 
 There are a number of other examples included in the repository.
 
@@ -29,6 +29,9 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+######v1.2.1 (November 24, 2016)
+ * Added [PSR-1](http://www.php-fig.org/psr/psr-1/) & [PSR-2](http://www.php-fig.org/psr/psr-2/) support
 
 ######v1.2.0 (November 8, 2016)
  * Added new optional parameter called $blur_filter to allow different filters to be used

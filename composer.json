@@ -26,5 +26,10 @@
     "require": {
         "php": ">=5.0.0",
         "ext-gd": "*"
+    },
+    "autoload": {
+        "files": [
+            "source/imagettftextblur.php"
+        ]
     }
 }

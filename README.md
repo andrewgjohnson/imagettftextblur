@@ -26,7 +26,7 @@ Either run this command
 
     composer require andrewgjohnson/imagettftextblur
 
-or add this so the `require` section of your composer.json
+or add this to the `require` section of your composer.json
 
     "andrewgjohnson/imagettftextblur":"1.*"
 

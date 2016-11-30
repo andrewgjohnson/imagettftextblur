@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur v1.2.5
+ * Imagettftextblur v1.2.6
  *
  * Copyright (c) 2013-2016 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -66,8 +66,10 @@ if (!function_exists('imagettftextblur')) {
      *    will alleviate any include problems.
      * @param string   $text           An image resource, returned by one of the
      *    image creation functions, such as imagecreatetruecolor().
-     * @param int      $blur_intensity Blur intensity
-     * @param int      $blur_filter    Blur filter
+     * @param int      $blur_intensity The number of times you would like to apply
+     *    your filter to your text (default is zero)
+     * @param int      $blur_filter    The filter you would like applied to your
+     *    text (default is IMG_FILTER_GAUSSIAN_BLUR)
      *
      * @return Returns an array with 8 elements representing four points making the
      * bounding box of the text. The order of the points is lower left, lower right,
@@ -151,7 +153,7 @@ if (!function_exists('imagettftextblur')) {
                     // $image
                     if ($visibility > 0) {
                         // we know we are on an affected pixel so ensure
-                        // $return_array is updated accordinly
+                        // $return_array is updated accordingly
                         $return_array[0] = min($return_array[0], $_x);
                         $return_array[1] = max($return_array[1], $_y);
                         $return_array[2] = max($return_array[2], $_x);

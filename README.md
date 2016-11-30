@@ -44,6 +44,9 @@ Full list of contributors:
 
 ## Changelog
 
+######v1.2.6 (November 29, 2016)
+ * Documentation updates
+
 ######v1.2.5 (November 29, 2016)
  * Added [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) support throughout
  * Added descriptive comments throughout library source code

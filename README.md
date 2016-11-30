@@ -44,6 +44,11 @@ Full list of contributors:
 
 ## Changelog
 
+######v1.2.5 (November 29, 2016)
+ * Added [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) support throughout
+ * Added descriptive comments throughout library source code
+ * Fixed a lot of minor PSR-1/PSR-2 errors & warnings
+
 ######v1.2.4 (November 24, 2016)
  * No new features; we had to do a version bump to fix an issue with our Composer package
 

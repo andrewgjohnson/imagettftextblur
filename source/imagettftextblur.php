@@ -3,7 +3,7 @@
 /**
  * Imagettftextblur v1.2.6
  *
- * Copyright (c) 2013-2016 Andrew G. Johnson <andrew@andrewgjohnson.com>
+ * Copyright (c) 2013-2017 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in the
  * Software without restriction, including without limitation the rights to use,
@@ -24,7 +24,7 @@
  * @category  Andrewgjohnson
  * @package   Imagettftextblur
  * @author    Andrew G. Johnson <andrew@andrewgjohnson.com>
- * @copyright 2013-2016 Andrew G. Johnson <andrew@andrewgjohnson.com>
+ * @copyright 2013-2017 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
  * @link      http://github.com/andrewgjohnson/imagettftextblur
  */
@@ -94,14 +94,14 @@ if (!function_exists('imagettftextblur')) {
         if (is_int($blur_intensity) && $blur_intensity > 0) {
             // $return_array will be returned once all calculations are complete
             $return_array = [
-                PHP_INT_MAX, // lower left, x coordinate
-                0,           // lower left, y coordinate
-                0,           // lower right, x coordinate
-                0,           // lower right, y coordinate
-                0,           // upper right, x coordinate
-                PHP_INT_MAX, // upper right, y coordinate
-                PHP_INT_MAX, // upper left, x coordinate
-                PHP_INT_MAX  // upper left, y coordinate
+                imagesx($image), // lower left, x coordinate
+                0,               // lower left, y coordinate
+                0,               // lower right, x coordinate
+                0,               // lower right, y coordinate
+                0,               // upper right, x coordinate
+                imagesy($image), // upper right, y coordinate
+                imagesx($image), // upper left, x coordinate
+                imagesy($image)  // upper left, y coordinate
             ];
 
             // $temporary_image is a GD image that is the same size as our

@@ -2,7 +2,7 @@
 
 ## Description
 
-imagettftextblur is a drop in replacement for imagettftext with an added parameter to add blur, glow and shadow effects to your PHP GD images.
+imagettftextblur is a drop in replacement for imagettftext with an added parameter to add blur, glow and shadow effects to your PHP GD images.  Follow [https://twitter.com/imagettftextblu](@imagettftextblu on Twitter) for updates.
 
 ## Usage
 
@@ -43,6 +43,11 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+######v1.2.7 (March 16, 2017)
+ * Fixed some issues with text placement in the examples
+ * Fixed the default value of the $return_array array
+ * Updated the "2016" copyright references to "2017"
 
 ######v1.2.6 (November 29, 2016)
  * Documentation updates

@@ -3,7 +3,7 @@
 /**
  * Imagettftextblur Example (Without Blur)
  *
- * Copyright (c) 2013-2016 Andrew G. Johnson <andrew@andrewgjohnson.com>
+ * Copyright (c) 2013-2017 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in the
  * Software without restriction, including without limitation the rights to use,
@@ -24,7 +24,7 @@
  * @category  Andrewgjohnson
  * @package   Imagettftextblur
  * @author    Andrew G. Johnson <andrew@andrewgjohnson.com>
- * @copyright 2013-2016 Andrew G. Johnson <andrew@andrewgjohnson.com>
+ * @copyright 2013-2017 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
  * @link      http://github.com/andrewgjohnson/imagettftextblur
  */
@@ -35,20 +35,20 @@ if (file_exists('../source/imagettftextblur.php')) {
     die('imagettftextblur.php not found');
 }
 
-$height = 300;
 $width = 600;
+$height = 300;
 $size = 20;
 $font = rtrim(dirname(__FILE__), '/\\') . '/arial.ttf';
 $string = 'This is an example that isn\'t blurry';
 
 $text_dimensions = imagettfbbox($size, 0, $font, $string);
+$text_left = min($text_dimensions[2], $text_dimensions[4]);
+$text_right = max($text_dimensions[0], $text_dimensions[6]);
 $text_top = min($text_dimensions[5], $text_dimensions[7]);
 $text_bottom = max($text_dimensions[1], $text_dimensions[3]);
-$text_left = min($text_dimensions[5], $text_dimensions[7]);
-$text_right = max($text_dimensions[1], $text_dimensions[3]);
 
-$x_offset = ($width / 2) - (($text_top - $text_bottom) / 2);
-$y_offset = ($height / 2) - (($text_left - $text_right) / 2);
+$x_offset = ($width / 2) - (($text_left - $text_right) / 2);
+$y_offset = ($height / 2) - (($text_top - $text_bottom) / 2);
 
 $image = imagecreatetruecolor($width, $height);
 

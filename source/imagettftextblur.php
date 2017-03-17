@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur v1.2.6
+ * Imagettftextblur v1.2.9
  *
  * Copyright (c) 2013-2017 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -31,8 +31,8 @@
 
 if (!function_exists('imagettftextblur')) {
     /**
-     * Imagettftextblur is a drop in replacement for imagettftext with an added
-     * parameter to add blur, glow and shadow effects to your PHP GD images
+     * Imagettftextblur is a drop in replacement for imagettftext with added
+     * parameters to add blur, glow and shadow effects to your PHP GD images.
      *
      * @param resource $image          An image resource, returned by one of the
      *    image creation functions, such as imagecreatetruecolor().

@@ -32,7 +32,7 @@ or add this to the `require` section of your composer.json
 
 ## Help Requests
 
-Please post any questions or problems using [the imagettftextblur tag on stackoverflow.com](https://stackoverflow.com/tags/imagettftextblur) if you need help.
+Please post any questions or problems on [stackoverflow.com](https://stackoverflow.com/search?q=imagettftextblur) if you need help.
 
 ## Acknowledgements
 
@@ -43,6 +43,9 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+###### v1.2.10 (June 23, 2017)
+ * Updated StackOverflow link in README.md
 
 ###### v1.2.9 (March 17, 2017)
  * Updated documentation text

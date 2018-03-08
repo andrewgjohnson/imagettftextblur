@@ -1,5 +1,12 @@
 # imagettftextblur
 
+[![MIT License](https://img.shields.io/github/license/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/blob/master/LICENSE)
+[![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/graphs/contributors)
+[![Packagist Downloads](https://img.shields.io/packagist/dm/andrewgjohnson/imagettftextblur.svg)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
+[![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/issues)
+
 ## Description
 
 imagettftextblur is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
@@ -43,6 +50,11 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
 ## Changelog
+
+###### v1.2.11 (March 8, 2018)
+ * Added [shields.io badges](http://shields.io/) to README.md
+ * Updated link to MIT license on opensource.org
+ * Updated the "2017" copyright references to "2018"
 
 ###### v1.2.10 (June 23, 2017)
  * Updated StackOverflow link in README.md

@@ -6,7 +6,7 @@ In order to participate your behavior must conform to our [code of conduct](http
 
 ## Submitting Changes
 
-Please send a [GitHub Pull Request](https://github.com/andrewgjohnson/imagettftextblur/pull/new/master) with a clear list of what you've done (read more about [pull requests](http://help.github.com/pull-requests/)).  We can always use more test coverage.  Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).
+Please send a [GitHub Pull Request](https://github.com/andrewgjohnson/imagettftextblur/pull/new/master) with a clear list of what you've done (read more about [pull requests](http://help.github.com/pull-requests/)).  We can always use more test coverage.  Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).  Please use our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/PULL_REQUEST_TEMPLATE.md) when submitting pull requests.
 
 Always write a clear log message for your commits.  One-line messages are fine for small changes, but bigger changes should look like this:
 

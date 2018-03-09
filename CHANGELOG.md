@@ -4,6 +4,15 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.12 (March 8, 2018)
+ * Updated GitHub URL's to HTTPS
+ * Moved Change Log to its own file
+ * Added a code of conduct
+ * Added contributing guidelines
+ * Added an issue template
+ * Added a pull request template
+ * Updated README.md with more detail & links
+
 ## v1.2.11 (March 8, 2018)
  * Added [shields.io badges](http://shields.io/) to README.md
  * Updated link to MIT license on opensource.org

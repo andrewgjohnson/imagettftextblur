@@ -49,6 +49,6 @@ Full list of contributors:
  * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
-## Changelog
+## Change Log
 
 You can find all notable changes in [CHANGELOG.md](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CHANGELOG.md).

@@ -49,6 +49,8 @@ Full list of contributors:
  * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
+Our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/ISSUE_TEMPLATE.md) & [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/PULL_REQUEST_TEMPLATE.md) come via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project.
+
 ## Changelog
 
 ###### v1.2.11 (March 8, 2018)

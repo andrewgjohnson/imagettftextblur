@@ -26,7 +26,7 @@
  * @author    Andrew G. Johnson <andrew@andrewgjohnson.com>
  * @copyright 2013-2018 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * @license   https://opensource.org/licenses/mit/ The MIT License
- * @link      http://github.com/andrewgjohnson/imagettftextblur
+ * @link      https://github.com/andrewgjohnson/imagettftextblur
  */
 
 if (!function_exists('imagettftextblur')) {

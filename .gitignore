@@ -10,3 +10,4 @@ Thumbs.db
 .svn/*
 .buildpath
 .project
+_site

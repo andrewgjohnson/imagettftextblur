@@ -4,6 +4,12 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.13 (March 11, 2018)
+ * Added support for [Jekyll](https://jekyllrb.com/)
+ * Added support for [GitHub Pages](https://pages.github.com)
+ * Turned on live traffic to [imagettftextblur.org](http://imagettftextblur.org)
+ * Minor changes to links in documentation
+
 ## v1.2.12 (March 9, 2018)
  * Updated GitHub URL's to HTTPS
  * Moved Changelog to its own file

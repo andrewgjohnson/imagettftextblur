@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur v1.2.12
+ * Imagettftextblur v1.2.13
  *
  * Copyright (c) 2013-2018 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of

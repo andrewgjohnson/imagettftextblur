@@ -1,4 +1,4 @@
-# imagettftextblur Change Log
+# imagettftextblur Changelog
 
 All notable changes to the [imagettftextblur project](https://github.com/andrewgjohnson/imagettftextblur) will be documented in this file.
 
@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## v1.2.12 (March 9, 2018)
  * Updated GitHub URL's to HTTPS
- * Moved Change Log to its own file
+ * Moved Changelog to its own file
  * Added a code of conduct
  * Added contributing guidelines
  * Added an issue template

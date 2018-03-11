@@ -66,6 +66,6 @@ Full list of contributors:
 
 Our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/ISSUE_TEMPLATE.md) & [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/PULL_REQUEST_TEMPLATE.md) come via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project.
 
-## Change Log
+## Changelog
 
-You can find all notable changes in [CHANGELOG.md](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CHANGELOG.md).
+You can find all notable changes in [the imagettftextblur changelog](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CHANGELOG.md).

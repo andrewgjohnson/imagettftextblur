@@ -1,4 +1,4 @@
-# imagettftextblur Changelog
+# Changelog
 
 All notable changes to the [imagettftextblur project](https://github.com/andrewgjohnson/imagettftextblur) will be documented in this file.
 

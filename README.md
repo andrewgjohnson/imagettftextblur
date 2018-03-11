@@ -15,7 +15,7 @@ imagettftextblur is a drop in replacement for imagettftext with added parameters
 
 ### With Composer
 
-This project offers support for the [Composer](https://getcomposer.org/) dependency manager.  You can find the imagettftextblur package online at [https://packagist.org/packages/andrewgjohnson/imagettftextblur](https://packagist.org/packages/andrewgjohnson/imagettftextblur).
+This project offers support for the [Composer](https://getcomposer.org/) dependency manager.  You can find the imagettftextblur package online on [packagist.org](https://packagist.org/packages/andrewgjohnson/imagettftextblur).
 
 #### Install using Composer
 
@@ -29,9 +29,9 @@ or add this to the `require` section of your composer.json file.
 
 ### Without Composer
 
-To get started without Composer simply add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://github.com/andrewgjohnson/imagettftextblur/blob/master/source/imagettftextblur.php).
+To get started without Composer simply add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
 
-    include_once 'source/imagettftextblur.php'
+    include_once 'source/imagettftextblur.php';
 
 ## Examples
 

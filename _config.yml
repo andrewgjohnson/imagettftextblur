@@ -1,1 +1,21 @@
-theme: jekyll-theme-minimal
+title:        imagettftextblur
+name:         imagettftextblur
+description:  imagettftextblur is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
+author:       Andrew G. Johnson
+author_email: andrew@andrewgjohnson.com
+email:        andrew@andrewgjohnson.com
+url:          "http://imagettftextblur.org"
+includes_dir: .
+layouts_dir:  documentation/imagettftextblur.org/layouts
+exclude:      [
+               CHANGELOG.md,
+               CODE_OF_CONDUCT.md,
+               composer.json,
+               CONTRIBUTING.md,
+               examples,
+               ISSUE_TEMPLATE.md,
+               LICENSE,
+               PULL_REQUEST_TEMPLATE.md,
+               README.md,
+               source
+              ]

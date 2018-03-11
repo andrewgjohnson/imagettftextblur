@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{{ site.description }}">
+        <meta name="keywords" content="{% if page.title %}{{ page.title }},{% endif %}{% if site.title %}{{ site.title }},{% endif %}{{ site.description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="https://assets-cdn.github.com/favicon.ico" />
+        <link rel="icon" href="https://assets-cdn.github.com/favicon.ico" />
+        <style>
+            /*<YUI_RESET>*/
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+            /*</YUI_RESET>*/
+
+            html,body,code,#toggle:before { color:#24292e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px }
+            a,a code                      { color:#0366d6;text-decoration:none }
+            strong                        { font-weight:bold }
+            em                            { font-style:italic }
+            h1,h2,h3,h4,h5,h6,#h1         { border-bottom:1px solid #dbdddf;clear:both;font-size:32px;font-weight:bold;font-weight:600;padding:15px 10px 5px }
+            h2                            { font-size:24px }
+            h3,h4,h5,h6                   { border-bottom:0;font-size:20px;padding-bottom:0 }
+            h4                            { font-size:16px }
+            h5                            { font-size:15px }
+            h6                            { font-size:14px }
+            p,ul,ol                       { line-height:150%;margin:0;padding:10px 10px 0 }
+            ul,ol                         { padding-left:35px }
+            ul li                         { list-style-type:disc }
+            ol li                         { list-style-type:decimal }
+            code                          { background-color:#f3f4f4;padding:0 5px }
+            pre,pre code                  { background-color:#f6f8fa;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:14px }
+            pre                           { border:0 solid #ffffff;border-width:0 10px;box-sizing:border-box;display:block;margin:10px 0 0;-moz-box-sizing:border-box;overflow:scroll;overflow-x:scroll;overflow-y:visible;padding:10px;-webkit-box-sizing:border-box;width:100% }
+            a:hover                       { text-decoration:underline }
+
+            #aside                        { background-color:#d8e6ff;border-radius:5px;margin:15px 0 0;-moz-border-radius:5px;padding:5px 15px 15px }
+            #aside ul                     { padding-top:5px }
+            #article                      { margin:0 auto;max-width:800px;padding-top:61px;*width:800px;_width:800px }
+            #header                       { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;height:60px;left:0;position:fixed;right:0;top:0;z-index:9 }
+            #header #h1                   { border:0;height:60px;left:0;line-height:60px;padding:0;position:absolute;z-index:2 }
+            #header #h1 a                 { padding:0 10px }
+            #header ul                    { float:right;padding:0 5px 0 0 }
+            #header ul li                 { display:block;float:left;list-style-type:none }
+            #header ul a                  { display:block;float:left;height:60px;line-height:60px;margin:0 0 0 5px;padding:0 5px }
+            #footer                       { margin:0 auto;max-width:800px;*width:800px;_width:800px }
+            #footer p                     { border-top:1px solid #eceef0;clear:both;color:#caccce;margin-top:45px;padding-bottom:15px;padding-top:15px;text-align:center }
+
+            @media only screen and (max-width : 799px) {
+                #aside                    { margin-left:10px;margin-right:10px }
+                #header ul                { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;display:none;float:none;left:0;padding:0 0 5px;position:absolute;right:0;top:60px }
+                body.menu-open #header ul { display:block }
+                #header ul li             { float:none }
+                #header ul a              { float:none;height:auto;line-height:normal;padding:5px 10px;text-align:center }
+                #toggle                   { background:#eceef0;border:1px solid #dbdddf;border-radius:5px;cursor:pointer;height:38px;-moz-border-radius:5px;position:absolute;right:10px;top:10px;width:38px;z-index:3 }
+                #toggle:before            { border-top:3px solid #545454;content:"Menu";font-size:10px;font-style:normal;font-weight:normal;left:5px;position:absolute;right:5px;text-align:center;top:18px }
+                #toggle:after             { border:0 solid #545454;border-width:3px 0;content:"";left:5px;height:3px;position:absolute;right:5px;top:6px }
+            }
+        </style>
+        <script>if (location.pathname.indexOf("/documentation") === 0) window.location.href = "/";</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115536830-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-115536830-1');
+        </script>
+    </head>
+    <body>
+        <article>
+            <div id="article">
+                {{ content }}
+                <aside>
+                    <div id="aside">
+                        <p>This page was automatically generated using <a href="https://jekyllrb.com/" title="Jekyll" target="_blank">Jekyll</a>; here are some helpful links:</p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/andrewgjohnson/imagettftextblur" title="imagettftextblur on GitHub">imagettftextblur on GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://packagist.org/packages/andrewgjohnson/imagettftextblur" title="imagettftextblur on Packagist">imagettftextblur on Packagist</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/imagettftextblu" title="imagettftextblur on Twitter">imagettftextblur on Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </article>
+        <header>
+            <div id="header">
+                <p id="h1">
+                    <a href="https://github.com/andrewgjohnson/imagettftextblur" title="imagettftextblur">imagettftextblur</a>
+                </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/" title="Readme">Readme</a>
+                        </li>
+                        {% assign site_title_with_semicolon = site.title | append: '&#58; ' %}
+                        {% for page in site.pages %}
+                            {% if page.nav %}
+                                <li>
+                                    <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title | replace: site_title_with_semicolon, '' }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <i id="toggle"></i>
+            </div>
+        </header>
+        <footer>
+            <div id="footer">
+                <p>Copyright &#169; 2013-2018</h6>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            document.getElementById("toggle").addEventListener("click",function() {
+                if (document.body.className.indexOf("menu-open") >= 0) {
+                    document.body.className = document.body.className.replace("menu-open", "");
+                } else {
+                    document.body.classList.add("menu-open");
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -5,4 +5,5 @@ permalink: /license/
 nav:       true
 ---
 
-{% include LICENSE %}
+{% capture content %}{% include LICENSE %}{% endcapture %}
+{{ content | markdownify }}

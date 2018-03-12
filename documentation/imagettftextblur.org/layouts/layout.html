@@ -18,7 +18,7 @@
             a,a code                      { color:#0366d6;text-decoration:none }
             strong                        { font-weight:bold }
             em                            { font-style:italic }
-            h1,h2,h3,h4,h5,h6,#h1         { border-bottom:1px solid #dbdddf;clear:both;font-size:32px;font-weight:bold;font-weight:600;padding:15px 10px 5px }
+            h1,h2,h3,h4,h5,h6             { border-bottom:1px solid #dbdddf;clear:both;font-size:32px;font-weight:bold;font-weight:600;padding:15px 10px 5px }
             h2                            { font-size:24px }
             h3,h4,h5,h6                   { border-bottom:0;font-size:20px;padding-bottom:0 }
             h4                            { font-size:16px }
@@ -37,8 +37,8 @@
             #aside ul                     { padding-top:5px }
             #article                      { margin:0 auto;max-width:800px;padding-top:61px;*width:800px;_width:800px }
             #header                       { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;height:60px;left:0;position:fixed;right:0;top:0;z-index:9 }
-            #header #h1                   { border:0;height:60px;left:0;line-height:60px;padding:0;position:absolute;z-index:2 }
-            #header #h1 a                 { padding:0 10px }
+            #header #name                 { font-weight:bold;height:60px;left:0;line-height:60px;padding:0;position:absolute;z-index:2 }
+            #header #name a               { display:block;float:left;padding:0 10px }
             #header ul                    { float:right;padding:0 5px 0 0 }
             #header ul li                 { display:block;float:left;list-style-type:none }
             #header ul a                  { display:block;float:left;height:60px;line-height:60px;margin:0 0 0 5px;padding:0 5px }
@@ -89,8 +89,8 @@
         </article>
         <header>
             <div id="header">
-                <p id="h1">
-                    <a href="https://github.com/andrewgjohnson/imagettftextblur" title="imagettftextblur">imagettftextblur</a>
+                <p id="name">
+                    <a href="/" title="{{ site.name }}">{{ site.name }}</a>
                 </p>
                 <nav>
                     <ul>

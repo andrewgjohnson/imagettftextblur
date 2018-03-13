@@ -2,7 +2,7 @@
 layout:    layout
 title:     imagettftextblur&#58; License
 permalink: /license/
-nav:       true
+nav:       2
 ---
 
 {% capture content %}{% include LICENSE %}{% endcapture %}

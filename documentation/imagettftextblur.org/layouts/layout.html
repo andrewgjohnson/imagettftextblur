@@ -94,11 +94,9 @@
                 </p>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="/" title="Readme">Readme</a>
-                        </li>
                         {% assign site_title_with_semicolon = site.title | append: '&#58; ' %}
-                        {% for page in site.pages %}
+                        {% assign pages_sorted = (site.pages | sort: 'nav') %}
+                        {% for page in pages_sorted %}
                             {% if page.nav %}
                                 <li>
                                     <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title | replace: site_title_with_semicolon, '' }}</a>

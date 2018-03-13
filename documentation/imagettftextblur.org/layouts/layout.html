@@ -28,6 +28,7 @@
             ul,ol                         { padding-left:35px }
             ul li                         { list-style-type:disc }
             ol li                         { list-style-type:decimal }
+            img                           { box-sizing:border-box;max-width:100%;-moz-box-sizing:border-box;padding:10px 0 0;-webkit-box-sizing:border-box }
             code                          { background-color:#f3f4f4;padding:0 5px }
             pre,pre code                  { background-color:#f6f8fa;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:14px }
             pre                           { border:0 solid #ffffff;border-width:0 10px;box-sizing:border-box;display:block;margin:10px 0 0;-moz-box-sizing:border-box;overflow:scroll;overflow-x:scroll;overflow-y:visible;padding:10px;-webkit-box-sizing:border-box;width:100% }
@@ -95,7 +96,7 @@
                 <nav>
                     <ul>
                         {% assign site_title_with_semicolon = site.title | append: '&#58; ' %}
-                        {% assign pages_sorted = (site.pages | sort: 'nav') %}
+                        {% assign pages_sorted = site.pages | sort: 'nav' %}
                         {% for page in pages_sorted %}
                             {% if page.nav %}
                                 <li>

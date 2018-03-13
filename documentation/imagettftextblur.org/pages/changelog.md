@@ -2,7 +2,7 @@
 layout:    layout
 title:     imagettftextblur&#58; Changelog
 permalink: /changelog/
-nav:       3
+nav:       4
 ---
 
 {% capture content %}{% include CHANGELOG.md %}{% endcapture %}

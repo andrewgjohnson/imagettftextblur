@@ -9,6 +9,7 @@ includes_dir: .
 layouts_dir:  documentation/imagettftextblur.org/layouts
 exclude:      [
                CHANGELOG.md,
+               CNAME,
                CODE_OF_CONDUCT.md,
                composer.json,
                CONTRIBUTING.md,

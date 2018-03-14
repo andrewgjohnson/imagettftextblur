@@ -37,10 +37,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="https://assets-cdn.github.com/favicon.ico" />
         <link rel="icon" href="https://assets-cdn.github.com/favicon.ico" />
+        <script>if (location.pathname == "/documentation" || location.pathname.indexOf("/documentation/") === 0) window.location.href = "/";</script>
         <style>
-            /*<YUI_RESET>*/
-            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
-            /*</YUI_RESET>*/
+			@import url("//yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css");
 
             html,body,code,#toggle:before { color:#24292e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px }
             a,a code                      { color:#0366d6;text-decoration:none }
@@ -58,7 +57,7 @@
             ol li                         { list-style-type:decimal }
             img                           { box-sizing:border-box;max-width:100%;-moz-box-sizing:border-box;padding:10px 0 0;-webkit-box-sizing:border-box }
             code                          { background-color:#f3f4f4;padding:0 5px }
-            pre,pre code                  { background-color:#f6f8fa;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:14px }
+            pre,pre code                  { background-color:#f6f8fa;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:12px;line-height:150% }
             pre                           { border:0 solid #ffffff;border-width:0 10px;box-sizing:border-box;display:block;margin:10px 0 0;-moz-box-sizing:border-box;overflow:scroll;overflow-x:scroll;overflow-y:visible;padding:10px;-webkit-box-sizing:border-box;width:100% }
             a:hover                       { text-decoration:underline }
 
@@ -80,12 +79,23 @@
                 body.menu-open #header ul { display:block }
                 #header ul li             { float:none }
                 #header ul a              { float:none;height:auto;line-height:normal;padding:5px 10px;text-align:center }
-                #toggle                   { background:#eceef0;border:1px solid #dbdddf;border-radius:5px;cursor:pointer;height:38px;-moz-border-radius:5px;position:absolute;right:10px;top:10px;width:38px;z-index:3 }
+                #toggle                   { background:#eceef0;border:1px solid #dbdddf;border-radius:5px;cursor:pointer;display:none;height:38px;-moz-border-radius:5px;position:absolute;right:10px;top:10px;width:38px;z-index:3 }
                 #toggle:before            { border-top:3px solid #545454;content:"Menu";font-size:10px;font-style:normal;font-weight:normal;left:5px;position:absolute;right:5px;text-align:center;top:18px }
                 #toggle:after             { border:0 solid #545454;border-width:3px 0;content:"";left:5px;height:3px;position:absolute;right:5px;top:6px }
             }
+
+			/* based on https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css */
+			.hljs,.hljs-subst                                                                                                         { color:#24292e }
+			.hljs-comment                                                                                                             { color:#6a737d }
+			.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name                               { color:#d73a49 }
+			.hljs-type,.hljs-string,.hljs-number,.hljs-selector-id,.hljs-selector-class,.hljs-quote,.hljs-template-tag,.hljs-deletion { color:#005cc5 }
+			.hljs-title,.hljs-section                                                                                                 { color:#005cc5 }
+			.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr,.hljs-selector-pseudo     { color:#d73a49 }
+			.hljs-literal                                                                                                             { color:#63a35c }
+			.hljs-built_in,.hljs-bullet,.hljs-code,.hljs-addition                                                                     { color:#63a35c }
+			.hljs-meta                                                                                                                { color:#b5b9be }
+			.hljs-meta-string                                                                                                         { color:#b5b9be }
         </style>
-        <script>if (location.pathname.indexOf("/documentation") === 0) window.location.href = "/";</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115536830-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -150,6 +160,12 @@
                     document.body.classList.add("menu-open");
                 }
             });
+        	document.getElementById("toggle").style.display = "block";
         </script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script type="text/javascript">
+			hljs.initHighlighting.called = false;
+			hljs.initHighlighting();
+		</script>
     </body>
 </html>

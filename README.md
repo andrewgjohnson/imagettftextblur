@@ -25,7 +25,7 @@ Either run this command
 
 or add this to the `require` section of your composer.json file.
 
-    "andrewgjohnson/imagettftextblur":"1.*"
+    "andrewgjohnson/imagettftextblur": "1.*"
 
 ### Without Composer
 

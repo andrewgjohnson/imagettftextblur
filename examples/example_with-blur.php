@@ -29,33 +29,44 @@
  * @link      https://github.com/andrewgjohnson/imagettftextblur
  */
 
+// include the imagettftextblur source if you're not using Composer
 if (file_exists('../source/imagettftextblur.php')) {
     include_once '../source/imagettftextblur.php';
 } else {
     die('imagettftextblur.php not found');
 }
 
-$width = 600;
-$height = 300;
-$size = 20;
-$font = rtrim(dirname(__FILE__), '/\\') . '/arial.ttf';
-$string = 'This is an example that is blurry';
+// set the parameters for our image
+$width            = 600;
+$height           = 300;
+$size             = 20;
+$font             = rtrim(dirname(__FILE__), '/\\') . '/arial.ttf';
+$string           = 'This is an example that is blurry';
 
-$text_dimensions = imagettfbbox($size, 0, $font, $string);
-$text_left = min($text_dimensions[2], $text_dimensions[4]);
-$text_right = max($text_dimensions[0], $text_dimensions[6]);
-$text_top = min($text_dimensions[5], $text_dimensions[7]);
-$text_bottom = max($text_dimensions[1], $text_dimensions[3]);
+// calculate the text size in advance
+$text_dimensions  = imagettfbbox($size, 0, $font, $string);
 
-$x_offset = ($width / 2) - (($text_left - $text_right) / 2);
-$y_offset = ($height / 2) - (($text_top - $text_bottom) / 2);
+// calculate the text's edges
+$text_left        = min($text_dimensions[2], $text_dimensions[4]);
+$text_right       = max($text_dimensions[0], $text_dimensions[6]);
+$text_top         = min($text_dimensions[5], $text_dimensions[7]);
+$text_bottom      = max($text_dimensions[1], $text_dimensions[3]);
 
-$image = imagecreatetruecolor($width, $height);
+// calculate the text's position
+$x_offset         = ($width / 2)  - (($text_left - $text_right) / 2);
+$y_offset         = ($height / 2) - (($text_top - $text_bottom) / 2);
 
+// create our image
+$image            = imagecreatetruecolor($width, $height);
+
+// set our image's colors
 $background_color = imagecolorallocate($image, 0xEE, 0xEE, 0xEE);
-$text_color = imagecolorallocate($image, 0x00, 0x00, 0x00);
+$text_color       = imagecolorallocate($image, 0x00, 0x00, 0x00);
 
+// fill our image with the background color
 imagefill($image, 0, 0, $background_color);
+
+// place the blurred text onto our image
 imagettftextblur(
     $image,
     $size,
@@ -68,7 +79,7 @@ imagettftextblur(
     10
 );
 
-header('Content-Type:image/png');
+// display our image and destroy the GD resource
+header('Content-Type: image/png');
 imagepng($image);
-
 imagedestroy($image);

@@ -1,11 +1,11 @@
 # imagettftextblur
 
-[![MIT License](https://img.shields.io/github/license/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/blob/master/LICENSE)
-[![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/graphs/contributors)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagettftextblur.svg)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
-[![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/issues)
+[![MIT License](https://img.shields.io/github/license/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/blob/master/LICENSE)
+[![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/graphs/contributors)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagettftextblur.png)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
+[![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/issues)
 
 ## Description
 

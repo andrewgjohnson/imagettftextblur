@@ -4,7 +4,7 @@
 [![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/stargazers)
 [![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/graphs/contributors)
-[![Packagist Downloads](https://img.shields.io/packagist/dm/andrewgjohnson/imagettftextblur.svg)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagettftextblur.svg)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.svg)](https://github.com/andrewgjohnson/imagettftextblur/issues)
 
 ## Description

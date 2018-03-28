@@ -9,7 +9,7 @@
 
 ## Description
 
-imagettftextblur is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
+**imagettftextblur** is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
 
 ## Usage
 
@@ -19,11 +19,11 @@ This project offers support for the [Composer](https://getcomposer.org/) depende
 
 #### Install using Composer
 
-Either run this command
+Either run this command:
 
     composer require andrewgjohnson/imagettftextblur
 
-or add this to the `require` section of your composer.json file.
+or add this to the `require` section of your composer.json file:
 
     "andrewgjohnson/imagettftextblur": "1.*"
 

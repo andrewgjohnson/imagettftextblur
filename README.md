@@ -29,7 +29,7 @@ or add this to the `require` section of your composer.json file.
 
 ### Without Composer
 
-To get started without Composer simply add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
+To use without Composer add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
 
     include_once 'source/imagettftextblur.php';
 
@@ -54,11 +54,11 @@ If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/
 
 ## Contributing
 
-Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CONTRIBUTING.md) if you are interested in contributing.
+Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CONTRIBUTING.md) if you want to contribute.
 
 ## Acknowledgements
 
-This project was started by [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
+This project was started by [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson).
 
 Full list of contributors:
  * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)

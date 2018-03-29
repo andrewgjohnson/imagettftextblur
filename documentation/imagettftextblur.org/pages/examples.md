@@ -2,7 +2,7 @@
 layout:    layout
 title:     imagettftextblur&#58; Examples
 permalink: /examples/
-nav:       2
+nav:       3
 ---
 
 # Examples

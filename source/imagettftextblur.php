@@ -95,10 +95,10 @@ if (!function_exists('imagettftextblur')) {
             // $return_array will be returned once all calculations are complete
             $return_array = [
                 imagesx($image), // lower left, x coordinate
-                0,               // lower left, y coordinate
-                0,               // lower right, x coordinate
-                0,               // lower right, y coordinate
-                0,               // upper right, x coordinate
+                -1,              // lower left, y coordinate
+                -1,              // lower right, x coordinate
+                -1,              // lower right, y coordinate
+                -1,              // upper right, x coordinate
                 imagesy($image), // upper right, y coordinate
                 imagesx($image), // upper left, x coordinate
                 imagesy($image)  // upper left, y coordinate

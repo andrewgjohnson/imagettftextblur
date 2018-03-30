@@ -36,13 +36,13 @@ To use without Composer add an [include](http://php.net/manual/function.include.
 ## Examples
 
     // standard method to add text to a GD image
-    imagettftext($image, 20, 0, 0, 0, $color, $font, $string);
+    imagettftext($im, 20, 0, 0, 0, $color, $font, $string);
 
     // this will work the exact same as the line above
-    imagettftextblur($image, 20, 0, 0, 0, $color, $font, $string);
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string);
 
     // method to add blurred text to a GD image
-    imagettftextblur($image, 20, 0, 0, 0, $color, $font, $string, 1);
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1);
 
 There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.org](http://imagettftextblur.org/examples/).
 

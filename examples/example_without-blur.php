@@ -57,18 +57,18 @@ $x_offset         = ($width / 2)  - (($text_left - $text_right) / 2);
 $y_offset         = ($height / 2) - (($text_top - $text_bottom) / 2);
 
 // create our image
-$image            = imagecreatetruecolor($width, $height);
+$im               = imagecreatetruecolor($width, $height);
 
 // set our image's colors
-$background_color = imagecolorallocate($image, 0xEE, 0xEE, 0xEE);
-$text_color       = imagecolorallocate($image, 0x00, 0x00, 0x00);
+$background_color = imagecolorallocate($im, 0xEE, 0xEE, 0xEE);
+$text_color       = imagecolorallocate($im, 0x00, 0x00, 0x00);
 
 // fill our image with the background color
-imagefill($image, 0, 0, $background_color);
+imagefill($im, 0, 0, $background_color);
 
 // place the text onto our image
 imagettftextblur(
-    $image,
+    $im,
     $size,
     0,
     $x_offset,
@@ -80,5 +80,5 @@ imagettftextblur(
 
 // display our image and destroy the GD resource
 header('Content-Type: image/png');
-imagepng($image);
-imagedestroy($image);
+imagepng($im);
+imagedestroy($im);

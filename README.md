@@ -68,4 +68,4 @@ Our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/mas
 
 ## Changelog
 
-You can find all notable changes in [the changelog](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CHANGELOG.md).
+You can find all notable changes in the [changelog](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CHANGELOG.md).

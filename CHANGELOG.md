@@ -4,6 +4,16 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.14 (April 9, 2018)
+ * Fixed incorrect default value of the $return_array array
+ * Refactored PHP code in examples for readability
+ * Added comments to PHP code in examples
+ * Changed shields.io badges to PNG
+ * Various text changes to documentation
+ * Various style changes to [imagettftextblur.org](http://imagettftextblur.org)
+ * Added "Source" and "Examples" pages to documentation
+ * Removed "Changelog", "Code of Conduct" & "Contributing" pages from documentation
+
 ## v1.2.13 (March 11, 2018)
  * Added support for [Jekyll](https://jekyllrb.com/)
  * Added support for [GitHub Pages](https://pages.github.com)

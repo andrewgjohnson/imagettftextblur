@@ -13,7 +13,7 @@ exclude:      [
                CODE_OF_CONDUCT.md,
                composer.json,
                CONTRIBUTING.md,
-               documentation/imagettftextblur/README.md,
+               documentation/imagettftextblur.org/README.md,
                documentation/README.md,
                examples/*.php,
                examples/*.ttf,

@@ -34,42 +34,48 @@ if (!function_exists('imagettftextblur')) {
      * Imagettftextblur is a drop in replacement for imagettftext with added
      * parameters to add blur, glow and shadow effects to your PHP GD images.
      *
-     * @param resource $image          An image resource, returned by one of the
-     *    image creation functions, such as imagecreatetruecolor().
-     * @param float    $size           The font size. Depending on your version of
-     *    GD, this should be specified as the pixel size (GD1) or point size (GD2).
-     * @param float    $angle          The angle in degrees, with 0 degrees being
+     * @param resource $image          <p>An image resource, returned by one of the
+     *    image creation functions, such as imagecreatetruecolor().</p>
+     * @param float    $size           <p>The font size. Depending on your version
+     *    of GD, this should be specified as the pixel size (GD1) or point size
+     *    (GD2).</p>
+     * @param float    $angle          <p>The angle in degrees, with 0 degrees being
      *    left-to-right reading text. Higher values represent a counter-clockwise
      *    rotation. For example, a value of 90 would result in bottom-to-top reading
-     *    text.
-     * @param int      $x              The coordinates given by x and y will define
-     *    the basepoint of the first character (roughly the lower-left corner of the
-     *    character). This is different from the imagestring(), where x and y define
-     *    the upper-left corner of the first character. For example, "top left" is
-     *    0, 0.
-     * @param int      $y              The y-ordinate. This sets the position of the
-     *    fonts baseline, not the very bottom of the character.
-     * @param int      $color          The color index. Using the negative of a
+     *    text.</p>
+     * @param int      $x              <p>The coordinates given by x and y will
+     *    define the basepoint of the first character (roughly the lower-left corner
+     *    of the character). This is different from the imagestring(), where x and y
+     *    define the upper-left corner of the first character. For example, "top
+     *    left" is 0, 0.</p>
+     * @param int      $y              <p>The y-ordinate. This sets the position of
+     *    the fonts baseline, not the very bottom of the character.</p>
+     * @param int      $color          <p>The color index. Using the negative of a
      *    color index has the effect of turning off antialiasing. See
-     *    imagecolorallocate().
-     * @param string   $fontfile       The path to the TrueType font you wish to use.
-     *    <br><br>Depending on which version of the GD library PHP is using, when
+     *    imagecolorallocate().</p>
+     * @param string   $fontfile       <p>The path to the TrueType font you wish to
+     *    use.</p><p>Depending on which version of the GD library PHP is using, when
      *    fontfile does not begin with a leading / then .ttf will be appended to the
      *    filename and the library will attempt to search for that filename along a
-     *    library-defined font path.<br><br>When using versions of the GD library
+     *    library-defined font path.</p><p>When using versions of the GD library
      *    lower than 2.0.18, a space character, rather than a semicolon, was used as
      *    the 'path separator' for different font files. Unintentional use of this
      *    feature will result in the warning message: Warning: Could not find/open
      *    font. For these affected versions, the only solution is moving the font to
-     *    a path which does not contain spaces.<br><br>In many cases where a font
-     *    resides in the same directory as the script using it the following trick
-     *    will alleviate any include problems.
-     * @param string   $text           An image resource, returned by one of the
-     *    image creation functions, such as imagecreatetruecolor().
-     * @param int      $blur_intensity The number of times you would like to apply
-     *    your filter to your text (default is zero)
-     * @param int      $blur_filter    The filter you would like applied to your
-     *    text (default is IMG_FILTER_GAUSSIAN_BLUR)
+     *    a path which does not contain spaces.</p>
+     * @param string   $text           <p>The text string in UTF-8 encoding.</p>
+     *    <p>May include decimal numeric character references (of the form:
+     *    &amp;#8364;) to access characters in a font beyond position 127. The
+     *    hexadecimal format (like &amp;#xA9;) is supported.Strings in UTF-8
+     *    encoding can be passed directly.</p><p>Named entities, such as &amp;copy;,
+     *    are not supported. Consider using html_entity_decode to decode these
+     *    named entities into UTF-8 strings.</p><p>If a character is used in the
+     *    string which is not supported by the font, a hollow rectangle will
+     *    replace the character.</p>
+     * @param int      $blur_intensity <p>The number of times you would like to
+     *    apply your filter to your text (default is zero)</p>
+     * @param int      $blur_filter    <p>The filter you would like applied to your
+     *    text (default is IMG_FILTER_GAUSSIAN_BLUR)</p>
      *
      * @return Returns an array with 8 elements representing four points making the
      * bounding box of the text. The order of the points is lower left, lower right,

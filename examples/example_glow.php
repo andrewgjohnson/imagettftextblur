@@ -40,21 +40,21 @@ if (file_exists('../source/imagettftextblur.php')) {
 $width            = 600;
 $height           = 300;
 $size             = 20;
-$font             = rtrim(dirname(__FILE__), '/\\') . '/arial.ttf';
+$font             = __DIR__ . '/arial.ttf';
 $string           = 'This is an example that is glowing';
 
 // calculate the text size in advance
 $text_dimensions  = imagettfbbox($size, 0, $font, $string);
 
 // calculate the text's edges
-$text_left        = min($text_dimensions[2], $text_dimensions[4]);
-$text_right       = max($text_dimensions[0], $text_dimensions[6]);
-$text_top         = min($text_dimensions[5], $text_dimensions[7]);
-$text_bottom      = max($text_dimensions[1], $text_dimensions[3]);
+$text_left        = min($text_dimensions[0], $text_dimensions[6]);
+$text_right       = max($text_dimensions[2], $text_dimensions[4]);
+$text_top         = min($text_dimensions[1], $text_dimensions[3]);
+$text_bottom      = max($text_dimensions[5], $text_dimensions[7]);
 
 // calculate the text's position
-$x_offset         = ($width / 2)  - (($text_left - $text_right) / 2);
-$y_offset         = ($height / 2) - (($text_top - $text_bottom) / 2);
+$x_offset         = ($width / 2)  - (($text_right - $text_left) / 2);
+$y_offset         = ($height / 2) - (($text_bottom - $text_top) / 2);
 
 // create our image
 $im               = imagecreatetruecolor($width, $height);

@@ -48,7 +48,7 @@
             */
             html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
-            html,body,code,#toggle:before { color:#24292e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px }
+            html,body,code                { color:#24292e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px }
             a,a code                      { color:#0366d6;text-decoration:none }
             strong                        { font-weight:bold }
             em                            { font-style:italic }
@@ -72,25 +72,29 @@
 
             #aside                        { background-color:#d8e6ff;border-radius:5px;margin:15px 0 0;-moz-border-radius:5px;padding:5px 15px 15px }
             #aside ul                     { padding-top:5px }
-            #article                      { margin:0 auto;max-width:800px;padding-top:61px;*width:800px;_width:800px }
+            #article                      { background-color:#ffffff;margin:0 auto;max-width:800px;padding:61px 10px 45px;position:relative;*width:800px;_width:800px;z-index:8 }
+            #avatar                       { cursor:default }
             #header                       { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;height:60px;left:0;position:fixed;right:0;top:0;z-index:9 }
             #header #name                 { font-weight:bold;height:60px;left:0;line-height:60px;padding:0;position:absolute;z-index:2 }
             #header #name a               { display:block;float:left;padding:0 10px }
             #header ul                    { float:right;padding:0 5px 0 0 }
             #header ul li                 { display:block;float:left;list-style-type:none }
             #header ul a                  { display:block;float:left;height:60px;line-height:60px;padding:0 5px }
-            #footer                       { margin:0 auto;max-width:800px;*width:800px;_width:800px }
-            #footer p                     { border-top:1px solid #eceef0;clear:both;color:#caccce;margin-top:45px;padding-bottom:15px;padding-top:15px;text-align:center }
+            #menu-toggle                  { display:none }
+            #footer                       { margin:0 auto;max-width:820px;position:relative;*width:820px;_width:820px;z-index:8 }
+            #footer p                     { background-color:#ffffff;border-radius:0 0 5px 5px;border-top:1px solid #eceef0;clear:both;color:#caccce;-moz-border-radius:0 0 5px 5px;padding-bottom:15px;padding-top:15px;text-align:center }
+            #cover-image                  { background-color:#eceef0;background-image:url("/documentation/imagettftextblur.org/images/cover-image.jpg");background-position:50% 50%;background-repeat:no-repeat;background-size:cover;height:400px;left:0;margin:0;padding:0;position:absolute;right:0;top:61px;z-index:2 }
+            #cover-image:before           { background-image:linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-ms-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-o-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);bottom:0;content:"";display:block;left:0;height:200px;position:absolute;right:0;z-index:2 }
 
             @media only screen and (max-width : 799px) {
-                #aside                    { margin-left:10px;margin-right:10px }
                 #header ul                { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;display:none;float:none;left:0;padding:0 0 5px;position:absolute;right:0;top:60px }
                 body.menu-open #header ul { display:block }
                 #header ul li             { float:none }
                 #header ul a              { float:none;height:auto;line-height:normal;padding:5px 10px;text-align:center }
-                #toggle                   { background:#eceef0;border:1px solid #dbdddf;border-radius:5px;cursor:pointer;display:none;height:38px;-moz-border-radius:5px;position:absolute;right:10px;top:10px;width:38px;z-index:3 }
-                #toggle:before            { border-top:3px solid #545454;content:"Menu";font-size:10px;font-style:normal;font-weight:normal;left:5px;position:absolute;right:5px;text-align:center;top:18px }
-                #toggle:after             { border:0 solid #545454;border-width:3px 0;content:"";left:5px;height:3px;position:absolute;right:5px;top:6px }
+                #menu-toggle              { background-color:#eceef0;border:1px solid #dbdddf;border-radius:5px;color:#5d5f61;cursor:pointer;display:block;font-size:10px;font-weight:bold;height:22px;line-height:22px;-moz-border-radius:5px;padding:16px 0 0;position:absolute;right:10px;text-align:center;text-decoration:none!important;top:10px;width:38px;z-index:3 }
+                #menu-toggle:before       { background-color:#5d5f61;content:"";height:12px;left:10px;position:absolute;right:10px;top:6px }
+                #menu-toggle:after        { border:0 solid #eceef0;border-width:3px 0;content:"";height:2px;left:10px;position:absolute;right:10px;top:8px }
+                #cover-image              { display:none }
             }
 
             /* based on https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css */
@@ -109,8 +113,8 @@
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-115536830-1');
+            gtag("js", new Date());
+            gtag("config", "UA-115536830-1");
         </script>
     </head>
     <body>
@@ -140,6 +144,7 @@
                 <p id="name">
                     <a href="/" title="{{ site.name }}">{{ site.name }}</a>
                 </p>
+                <a href="/menu/" title="Menu" id="menu-toggle">Menu</a>
                 <nav>
                     <ul>
                         {% assign site_title_with_semicolon = site.title | append: '&#58; ' %}
@@ -153,7 +158,6 @@
                         {% endfor %}
                     </ul>
                 </nav>
-                <i id="toggle"></i>
             </div>
         </header>
         <footer>
@@ -161,15 +165,21 @@
                 <p>Copyright &#169; 2013-2018</p>
             </div>
         </footer>
+        <b id="cover-image"></b>
         <script type="text/javascript">
-            document.getElementById("toggle").addEventListener("click", function() {
+            document.getElementById("menu-toggle").addEventListener("click", function(e) {
                 if (document.body.className.indexOf("menu-open") >= 0) {
                     document.body.className = document.body.className.replace("menu-open", "");
                 } else {
-                    document.body.classList.add("menu-open");
+                    document.body.className = document.body.className + " menu-open";
                 }
+                e.preventDefault();
+                e.stopPropagation();
             });
-            document.getElementById("toggle").style.display = "block";
+            document.getElementById("avatar").addEventListener("click", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
         </script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script type="text/javascript">

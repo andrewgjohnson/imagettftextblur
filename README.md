@@ -7,6 +7,8 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagettftextblur.png)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.png)](https://github.com/andrewgjohnson/imagettftextblur/issues)
 
+<p align="center"><a href="https://imagettftextblur.org/" title=""><img src="https://imagettftextblur.org/documentation/imagettftextblur.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+
 ## Description
 
 **imagettftextblur** is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
@@ -64,7 +66,7 @@ Full list of contributors:
  * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
 
-Our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/ISSUE_TEMPLATE.md) & [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/PULL_REQUEST_TEMPLATE.md) come via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project.
+Our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/ISSUE_TEMPLATE.md) & [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/PULL_REQUEST_TEMPLATE.md) come via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [mountains photo](https://unsplash.com/photos/qJvpykJ5SKs) comes via [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm).
 
 ## Changelog
 

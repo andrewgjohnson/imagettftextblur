@@ -1,7 +1,7 @@
 ---
 layout:    layout
 title:     imagettftextblur&#58; Menu
-permalink: /menu.html
+permalink: /menu/
 ---
 
 # Menu

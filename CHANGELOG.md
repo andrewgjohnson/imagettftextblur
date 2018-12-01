@@ -4,6 +4,14 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.16 (December 1, 2018)
+ * Added avatar to README.md
+ * Integrated mountains photo & credited the photographer in README.md
+ * Added cover photo to the documentation website
+ * Improved design of menu toggle on the documentation website
+ * Changed menu toggle to a link to a new page called /menu/ for JavaScript-disabled users
+ * Added return type
+
 ## v1.2.15 (June 4, 2018)
  * Enabled HTTPS on https://imagettftextblur.org/
  * Switched YUI reset CSS from Yahoo hosted to inline

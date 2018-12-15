@@ -46,7 +46,7 @@ To use without Composer add an [include](http://php.net/manual/function.include.
     // method to add blurred text to a GD image
     imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1);
 
-There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.org](http://imagettftextblur.org/examples/).
+There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.org](https://imagettftextblur.org/examples/).
 
 ## Help Requests
 

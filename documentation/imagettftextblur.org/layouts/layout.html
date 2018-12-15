@@ -87,6 +87,12 @@
             #cover-image:before           { background-image:linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-ms-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-o-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);bottom:0;content:"";display:block;left:0;height:200px;position:absolute;right:0;z-index:2 }
 
             @media only screen and (max-width : 799px) {
+                h1,h2,h3,h4,h5,h6         { font-size:24px;overflow:hidden;text-overflow:ellipsis }
+                h2                        { font-size:21px }
+                h3                        { font-size:18px }
+                h4                        { font-size:16px }
+                h5                        { font-size:15px }
+                h6                        { font-size:14px }
                 #header ul                { background-color:#f6f8fa;border-bottom:1px solid #dbdddf;display:none;float:none;left:0;padding:0 0 5px;position:absolute;right:0;top:60px }
                 body.menu-open #header ul { display:block }
                 #header ul li             { float:none }
@@ -167,19 +173,28 @@
         </footer>
         <b id="cover-image"></b>
         <script type="text/javascript">
-            document.getElementById("menu-toggle").addEventListener("click", function(e) {
-                if (document.body.className.indexOf("menu-open") >= 0) {
-                    document.body.className = document.body.className.replace("menu-open", "");
-                } else {
-                    document.body.className = document.body.className + " menu-open";
+            (function() {
+                var menuToggleElement = document.getElementById("menu-toggle");
+                if (menuToggleElement !== null) {
+                    menuToggleElement.addEventListener("click", function(e) {
+                        if (document.body.className.indexOf("menu-open") >= 0) {
+                            document.body.className = document.body.className.replace("menu-open", "");
+                        } else {
+                            document.body.className = document.body.className + " menu-open";
+                        }
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
                 }
-                e.preventDefault();
-                e.stopPropagation();
-            });
-            document.getElementById("avatar").addEventListener("click", function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-            });
+
+                var avatarElement = document.getElementById("avatar");
+                if (avatarElement !== null) {
+                    avatarElement.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+                }
+            })();
         </script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script type="text/javascript">

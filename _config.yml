@@ -4,9 +4,9 @@ description:  imagettftextblur is a drop in replacement for imagettftext with ad
 author:       Andrew G. Johnson
 author_email: andrew@andrewgjohnson.com
 email:        andrew@andrewgjohnson.com
-url:          "http://imagettftextblur.org"
+url:          "https://imagettftextblur.agjgd.org"
 includes_dir: .
-layouts_dir:  documentation/imagettftextblur.org/layouts
+layouts_dir:  documentation/imagettftextblur.agjgd.org/layouts
 exclude:      [
                CHANGELOG.md,
                CNAME,

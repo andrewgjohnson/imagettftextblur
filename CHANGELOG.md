@@ -4,6 +4,10 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.17 (November 17, 2022)
+ * Changed documentation website to [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org)
+ * Updated copyright years to 2022
+
 ## v1.2.16 (December 1, 2018)
  * Added avatar to README.md
  * Integrated mountains photo & credited the photographer in README.md
@@ -13,7 +17,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Added return type
 
 ## v1.2.15 (June 4, 2018)
- * Enabled HTTPS on https://imagettftextblur.org/
+ * Enabled HTTPS on https://imagettftextblur.agjgd.org/
  * Switched YUI reset CSS from Yahoo hosted to inline
  * Added examples/README.md to help browsers on the GitHub repository
  * Switched to `__DIR__` constant in examples to get current directory
@@ -26,14 +30,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Added comments to PHP code in examples
  * Changed shields.io badges to PNG
  * Various text changes to documentation
- * Various style changes to [imagettftextblur.org](http://imagettftextblur.org)
+ * Various style changes to [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org)
  * Added "Source" and "Examples" pages to documentation
  * Removed "Changelog", "Code of Conduct" & "Contributing" pages from documentation
 
 ## v1.2.13 (March 11, 2018)
  * Added support for [Jekyll](https://jekyllrb.com/)
  * Added support for [GitHub Pages](https://pages.github.com)
- * Turned on live traffic to [imagettftextblur.org](http://imagettftextblur.org)
+ * Turned on live traffic to [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org)
  * Minor changes to links in documentation
 
 ## v1.2.12 (March 9, 2018)

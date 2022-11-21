@@ -4,6 +4,9 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.18 (November 21, 2022)
+ * tk
+
 ## v1.2.17 (November 17, 2022)
  * Changed documentation website to [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org)
  * Updated copyright years to 2022

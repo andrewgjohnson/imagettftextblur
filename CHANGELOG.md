@@ -4,6 +4,10 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.2.20 (November 22, 2022)
+ * Changed issue templates from Markdown to YAML
+ * Added config.yml to power issue submissions
+
 ## v1.2.19 (November 22, 2022)
  * Removed the MIT logo from the shields.io badge for imagettftextblur's license
 

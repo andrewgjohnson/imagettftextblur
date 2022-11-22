@@ -1,0 +1,43 @@
+name: Feature Request
+description: File a feature request
+title: "[Feature Request]: "
+labels: ["feature"]
+assignees:
+  - andrewgjohnson
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: e.g. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the new feature versus the current behaviour
+      description: What do you want to see added/changed?
+      placeholder: Describe the feature versus the current behaviour here
+    validations:
+      required: true
+  - type: input
+    id: risk
+    attributes:
+      label: Is there any risk this change will not be backwards compatible with current integrations?
+      description: Would this change cause a problem when users update to it?
+      placeholder: Describe any risks here
+    validations:
+      required: false
+  - type: textarea
+    id: other-information
+    attributes:
+      label: Any other information
+      description: Include any other information that may be helpful. Large files should be attached.
+      placeholder: Any other information here
+    validations:
+      required: false

@@ -2,7 +2,7 @@
 layout:    layout
 title:     imagettftextblur&#58; License
 permalink: /license/
-nav:       4
+nav:       5
 ---
 
 # License

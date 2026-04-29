@@ -11,7 +11,7 @@
 
 ## Description
 
-**imagettftextblur** is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
+**imagettftextblur** is a drop-in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
 
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
@@ -41,14 +41,15 @@ To use without Composer add an [include](http://php.net/manual/function.include.
 
 ## Examples
 
-    // standard method to add text to a GD image
-    imagettftext($im, 20, 0, 0, 0, $color, $font, $string);
+    // In PHP 8.0 a ninth parameter ($options) was added to imagettftext()
+    imagettftext($im, 20, 0, 0, 0, $color, $font, $string, array()); // Add text to a GD image
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array()); // This works the same as the line above
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array(), 1); // This will add the same text only blurred
 
-    // this will work the exact same as the line above
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string);
-
-    // method to add blurred text to a GD image
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1);
+    // We also support previous versions of PHP back to 5.0 and the previous version of imagettftext()
+    imagettftext($im, 20, 0, 0, 0, $color, $font, $string); // Add text to a GD image
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string); // This works the same as the line above
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1); // This will add the same text only blurred
 
 There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org/examples/).
 

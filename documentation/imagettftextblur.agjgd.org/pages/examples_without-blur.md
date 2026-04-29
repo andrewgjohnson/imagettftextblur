@@ -6,12 +6,12 @@ permalink: /examples/without-blur/
 
 # Example: Without Blur
 
-[**example_without-blur.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/example_without-blur.php)
+[**04-without-blur.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/04-without-blur.php)
 
-<pre><code>{% include examples/example_without-blur.php %}</code></pre>
+<pre><code>{% include examples/04-without-blur.php %}</code></pre>
 
 ## Expected Output
 
-[**example_without-blur.png**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/example_without-blur.png)
+[**04-without-blur.png**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/04-without-blur.png)
 
-![Example: Without Blur](/examples/example_without-blur.png "Example: Without Blur")
+![Example: Without Blur](/examples/04-without-blur.png "Example: Without Blur")

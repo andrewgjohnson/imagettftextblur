@@ -4,18 +4,26 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.3.0 (April 28, 2026)
+ * Added [Contribute](https://imagettftextblur.agjgd.org/contribute/) page and updated [contributing guidelines](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/CONTRIBUTING.md)
+ * Added PHP_CodeSniffer support to enforce PSR-12 and PHP 5.0 compatibility
+ * Added PHPUnit support for unit tests
+ * Added `lint`, `lint:fix`, `phpunit` and `test` composer scripts
+ * Fixed support for older PHP versions; this project now truly supports PHP 5.0
+ * Fixed a number of broken links
+
 ## v1.2.21 (November 22, 2022)
  * Updated GitHub Pages config with a correct list of exclusions
 
 ## v1.2.20 (November 22, 2022)
  * Changed issue templates from Markdown to YAML
- * Added config.yml to power issue submissions
+ * Added config.yml for GitHub issue submission
 
 ## v1.2.19 (November 22, 2022)
  * Removed the MIT logo from the shields.io badge for imagettftextblur's license
 
 ## v1.2.18 (November 22, 2022)
- * Signed up for [Patreon](https://patreon.com/agjgd) and added links to README.md
+ * Signed up for [Patreon](https://patreon.com/agjopensource) and added links to README.md
  * Added `.github` folder to unclutter the root directory
  * Added `CODEOWNERS` file
  * Added `FUNDING.yml` file
@@ -38,7 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Added cover photo to the documentation website
  * Improved design of menu toggle on the documentation website
  * Changed menu toggle to a link to a new page called /menu/ for JavaScript-disabled users
- * Added return type
+ * Added a return type annotation
 
 ## v1.2.15 (June 4, 2018)
  * Enabled HTTPS on https://imagettftextblur.agjgd.org/
@@ -65,7 +73,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Minor changes to links in documentation
 
 ## v1.2.12 (March 9, 2018)
- * Updated GitHub URL's to HTTPS
+ * Updated GitHub URLs to HTTPS
  * Moved Changelog to its own file
  * Added a code of conduct
  * Added contributing guidelines
@@ -101,7 +109,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Fixed a lot of minor PSR-1/PSR-2 errors & warnings
 
 ## v1.2.4 (November 24, 2016)
- * No new features; we had to do a version bump to fix an issue with our Composer package
+ * Version bump only to resolve an issue with the Composer package
 
 ## v1.2.3 (November 24, 2016)
  * Fixed autoload issue when installed via Composer
@@ -121,4 +129,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Added PNG images for each example of expected output
 
 ## v1.0.0 (March 19, 2013)
- * Intial release of imagettftextblur
+ * Initial release of imagettftextblur

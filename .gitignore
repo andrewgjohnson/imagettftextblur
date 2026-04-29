@@ -11,6 +11,8 @@ Thumbs.db
 .buildpath
 .project
 _site
+.settings/
 .settings/*
 composer.lock
 vendor
+.phpunit.result.cache

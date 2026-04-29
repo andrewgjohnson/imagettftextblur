@@ -7,7 +7,8 @@ nav:       3
 
 # Examples
 
- * [Example: **Glow**](/examples/glow/)
- * [Example: **Shadow**](/examples/shadow/)
- * [Example: **With Blur**](/examples/with-blur/)
- * [Example: **Without Blur**](/examples/without-blur/)
+ * [Example One: **Glow**](/examples/glow/)
+ * [Example Two: **Shadow**](/examples/shadow/)
+ * [Example Three: **With Blur**](/examples/with-blur/)
+ * [Example Four: **Without Blur**](/examples/without-blur/)
+ * [Example Five: **Glow in PHP 8+**](/examples/glow-in-php-8/)

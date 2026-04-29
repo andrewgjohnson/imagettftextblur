@@ -6,12 +6,12 @@ permalink: /examples/shadow/
 
 # Example: Shadow
 
-[**example_shadow.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/example_shadow.php)
+[**02-shadow.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/02-shadow.php)
 
-<pre><code>{% include examples/example_shadow.php %}</code></pre>
+<pre><code>{% include examples/02-shadow.php %}</code></pre>
 
 ## Expected Output
 
-[**example_shadow.png**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/example_shadow.png)
+[**02-shadow.png**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/examples/02-shadow.png)
 
-![Example: Shadow](/examples/example_shadow.png "Example: Shadow")
+![Example: Shadow](/examples/02-shadow.png "Example: Shadow")

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="Imagettftextblur">
+
+    <!-- Arguments -->
+    <arg name="extensions" value="php" />
+    <arg name="colors" />
+    <arg value="sp" />
+
+    <!-- Sniff the source, tests and examples -->
+    <file>source</file>
+    <file>tests</file>
+    <file>examples</file>
+
+    <!-- Enforce PHP-FIG’s PSR-12 standard -->
+    <rule ref="PSR12" />
+
+    <!-- Enforce PHP 5.0 compatibility (for the source and examples but not for tests) -->
+    <rule ref="PHPCompatibility">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <config name="testVersion" value="5.0-" />
+
+</ruleset>

@@ -1,7 +1,7 @@
 {
     "name": "andrewgjohnson/imagettftextblur",
     "type": "library",
-    "description": "imagettftextblur is a drop in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images",
+    "description": "imagettftextblur is a drop-in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images",
     "keywords": [
         "gd",
         "graphics",
@@ -27,9 +27,29 @@
         "php": ">=5.0.0",
         "ext-gd": "*"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.13",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpunit/phpunit": "11"
+    },
     "autoload": {
         "files": [
             "source/imagettftextblur.php"
         ]
+    },
+    "scripts": {
+        "lint": "@php vendor/bin/phpcs",
+        "lint:fix": "@php vendor/bin/phpcbf",
+        "phpunit": "@php vendor/bin/phpunit",
+        "test": [
+            "@lint",
+            "@phpunit"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }

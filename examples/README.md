@@ -1,3 +1,3 @@
 # Examples
 
-The examples can be viewed on [imagettftextblur.agjgd.org/examples](https://imagettftextblur.agjgd.org/examples/).
+The examples can be viewed at [imagettftextblur.agjgd.org/examples](https://imagettftextblur.agjgd.org/examples/).

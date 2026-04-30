@@ -37,7 +37,7 @@ or add this to the `require` section of your composer.json file:
 
 To use without Composer add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
 
-    include_once 'source/imagettftextblur.php';
+    include 'source/imagettftextblur.php';
 
 ## Examples
 
@@ -61,7 +61,7 @@ If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/
 
 ## Contributing
 
-Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagettftextblur/blob/master/CONTRIBUTING.md) if you want to contribute.
+Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/CONTRIBUTING.md) if you want to contribute.
 
 You can contribute financially by becoming a [patron](https://patreon.com/agjopensource) at [patreon.com/agjopensource](https://patreon.com/agjopensource) to support imagettftextblur and [other agjgd.org projects](https://agjgd.org/projects/).
 

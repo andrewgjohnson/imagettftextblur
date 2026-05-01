@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur Example (Glow in PHP 8)
+ * Imagettftextblur Example (Glow in PHP 8+)
  *
  * Copyright (c) 2013-2026 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated

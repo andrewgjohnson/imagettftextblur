@@ -43,14 +43,14 @@ $string          = 'This is an example that has a shadow';
 $textDimensions  = imagettfbbox($size, 0, $font, $string);
 
 // Calculate the text’s edges
-$textLeft        = min($textDimensions[0], $textDimensions[6]);
-$textRight       = max($textDimensions[2], $textDimensions[4]);
-$textTop         = min($textDimensions[1], $textDimensions[3]);
-$textBottom      = max($textDimensions[5], $textDimensions[7]);
+$textLeft        = min($textDimensions[0], $textDimensions[2], $textDimensions[4], $textDimensions[6]);
+$textRight       = max($textDimensions[0], $textDimensions[2], $textDimensions[4], $textDimensions[6]);
+$textTop         = min($textDimensions[1], $textDimensions[3], $textDimensions[5], $textDimensions[7]);
+$textBottom      = max($textDimensions[1], $textDimensions[3], $textDimensions[5], $textDimensions[7]);
 
 // Calculate the text’s position
-$xOffset         = ($width / 2)  - (($textRight - $textLeft) / 2);
-$yOffset         = ($height / 2) - (($textBottom - $textTop) / 2);
+$xOffset         = (int)round(($width / 2) - (($textRight - $textLeft) / 2) - $textLeft);
+$yOffset         = (int)round(($height / 2) - (($textBottom - $textTop) / 2) - $textTop);
 
 // Create our image
 $im              = imagecreatetruecolor($width, $height);

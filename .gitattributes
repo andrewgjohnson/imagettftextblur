@@ -1,0 +1,12 @@
+# Normalize end-of-line character
+* text=auto eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.php  text eol=lf
+*.xml  text eol=lf
+
+# Treat image/font assets as binary files
+*.jpg binary
+*.png binary
+*.ttf binary

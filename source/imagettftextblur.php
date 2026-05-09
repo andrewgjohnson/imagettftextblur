@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur v1.3.2
+ * Imagettftextblur v1.3.3
  *
  * Copyright (c) 2013-2026 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -196,63 +196,60 @@ if (!function_exists('imagettftextblur')) {
                 $text
             );
 
-            if ($imagettftext === false) { // If imagettftext() failed, there’s no need to continue
-                imagedestroy($temporaryImage);
-                return false;
-            }
+            if ($imagettftext !== false) {
+                // Apply the blur filter
+                for ($blur = 1; $blur <= $blurIntensity; $blur++) {
+                    imagefilter($temporaryImage, $blurFilter);
+                }
 
-            // Apply the blur filter
-            for ($blur = 1; $blur <= $blurIntensity; $blur++) {
-                imagefilter($temporaryImage, $blurFilter);
-            }
+                // Set $colorOpacity based on $color’s transparency
+                $colorData    = imagecolorsforindex($image, $color);
+                $colorOpacity = (127 - $colorData['alpha']) / 127;
 
-            // Set $colorOpacity based on $color’s transparency
-            $colorData    = imagecolorsforindex($image, $color);
-            $colorOpacity = (127 - $colorData['alpha']) / 127;
-
-            // Loop through each pixel in $temporaryImage
-            for ($temporaryX = 0; $temporaryX < imagesx($temporaryImage); $temporaryX++) {
-                for ($temporaryY = 0; $temporaryY < imagesy($temporaryImage); $temporaryY++) {
-                    // $visibility is the grayscale of the current pixel multiplied by $colorOpacity
-                    $visibility = (imagecolorat(
-                        $temporaryImage,
-                        $temporaryX,
-                        $temporaryY
-                    ) & 0xFF) / 255 * $colorOpacity;
-
-                    // If the current pixel would be visible, add it to $image
-                    if ($visibility > 0) {
-                        // We are on an affected pixel so update $returnArray accordingly
-                        $returnArray = array(
-                            min($returnArray[0], $temporaryX),
-                            max($returnArray[1], $temporaryY),
-                            max($returnArray[2], $temporaryX),
-                            max($returnArray[3], $temporaryY),
-                            max($returnArray[4], $temporaryX),
-                            min($returnArray[5], $temporaryY),
-                            min($returnArray[6], $temporaryX),
-                            min($returnArray[7], $temporaryY)
-                        );
-
-                        // Set the current pixel in $image
-                        imagesetpixel(
-                            $image,
+                // Loop through each pixel in $temporaryImage
+                for ($temporaryX = 0; $temporaryX < imagesx($temporaryImage); $temporaryX++) {
+                    for ($temporaryY = 0; $temporaryY < imagesy($temporaryImage); $temporaryY++) {
+                        // $visibility is the grayscale of the current pixel multiplied by $colorOpacity
+                        $visibility = (imagecolorat(
+                            $temporaryImage,
                             $temporaryX,
-                            $temporaryY,
-                            imagecolorallocatealpha(
+                            $temporaryY
+                        ) & 0xFF) / 255 * $colorOpacity;
+
+                        // If the current pixel would be visible, add it to $image
+                        if ($visibility > 0) {
+                            // We are on an affected pixel so update $returnArray accordingly
+                            $returnArray = array(
+                                min($returnArray[0], $temporaryX),
+                                max($returnArray[1], $temporaryY),
+                                max($returnArray[2], $temporaryX),
+                                max($returnArray[3], $temporaryY),
+                                max($returnArray[4], $temporaryX),
+                                min($returnArray[5], $temporaryY),
+                                min($returnArray[6], $temporaryX),
+                                min($returnArray[7], $temporaryY)
+                            );
+
+                            // Set the current pixel in $image
+                            imagesetpixel(
                                 $image,
-                                $colorData['red'],
-                                $colorData['green'],
-                                $colorData['blue'],
-                                (int)round((1 - $visibility) * 127)
-                            )
-                        );
+                                $temporaryX,
+                                $temporaryY,
+                                imagecolorallocatealpha(
+                                    $image,
+                                    $colorData['red'],
+                                    $colorData['green'],
+                                    $colorData['blue'],
+                                    (int)round((1 - $visibility) * 127)
+                                )
+                            );
+                        }
                     }
                 }
             }
 
             // Destroy our $temporaryImage
-            imagedestroy($temporaryImage);
+            version_compare(PHP_VERSION, '8.0.0', '<') && imagedestroy($temporaryImage);
 
             if ($returnArray === $returnArrayDefault) {
                 // Return false if $returnArray hasn’t changed to indicate a failure

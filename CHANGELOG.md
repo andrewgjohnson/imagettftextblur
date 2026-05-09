@@ -4,8 +4,12 @@ All notable changes to the [imagettftextblur project](https://github.com/andrewg
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.3.3 (May 9, 2026)
+ * Added [.gitattributes](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.gitattributes) file to help manage end-of-line characters
+ * Added a `version_compare()` check before all `imagedestroy()` calls; the imagedestroy() function became an optional step that did nothing as of PHP 8.0 but as of PHP 8.5 when invoked it produces a deprecated error
+
 ## v1.3.2 (May 3, 2026)
- * Added [ci.yml worfklow](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/workflows/ci.yml) to add PHP_CodeSniffer and PHPUnit checks into the pull request process on GitHub
+ * Added [ci.yml workflow](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/workflows/ci.yml) to add PHP_CodeSniffer and PHPUnit checks into the pull request process on GitHub
  * Fixed math errors in the example and regenerated the example PNG's
 
 ## v1.3.1 (April 29, 2026)

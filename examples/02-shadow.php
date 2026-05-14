@@ -36,7 +36,8 @@ if (file_exists('../source/imagettftextblur.php')) {
 $width           = 600;
 $height          = 300;
 $size            = 20;
-$font            = dirname(__FILE__) . '/arial.ttf';
+$shadowDistance  = 3;
+$font            = dirname(__FILE__) . '/NotoSans-Regular.ttf';
 $string          = 'This is an example that has a shadow';
 
 // Calculate the text size in advance
@@ -58,7 +59,7 @@ $im              = imagecreatetruecolor($width, $height);
 // Set our image’s colors
 $backgroundColor = imagecolorallocate($im, 0xEE, 0xEE, 0xEE);
 $textColor       = imagecolorallocate($im, 0x00, 0x00, 0x00);
-$shadowColor     = imagecolorallocate($im, 0x99, 0x99, 0x99);
+$shadowColor     = imagecolorallocate($im, 0x66, 0x66, 0x66);
 
 // Fill our image with the background color
 imagefill($im, 0, 0, $backgroundColor);
@@ -68,8 +69,8 @@ imagettftextblur(
     $im,
     $size,
     0,
-    $xOffset + 5,
-    $yOffset + 5,
+    $xOffset + $shadowDistance,
+    $yOffset + $shadowDistance,
     $shadowColor,
     $font,
     $string,
@@ -77,7 +78,7 @@ imagettftextblur(
 );
 
 // Place the text onto our image
-imagettftextblur(
+imagettftext(
     $im,
     $size,
     0,

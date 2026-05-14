@@ -12,7 +12,7 @@ Run the following command to check your changes against our linters and unit tes
 
 #### PHP
 
-The project uses the [PHP_CodeSniffer](https://github.com/squizlabs/php_codesniffer) linter tool to enforce coding standards in the [PHP source](https://imagettftextblur.agjgd.org/source/), [unit tests](https://github.com/andrewgjohnson/imagettftextblur/tree/master/tests) and [examples](https://imagettftextblur.agjgd.org/examples/). The project uses PHP_CodeSniffer [PSR-12](https://www.php-fig.org/psr/psr-12/) ruleset defined in the [PHP_CodeSniffer configuration file](https://github.com/andrewgjohnson/imagettftextblur/blob/master/phpcs.xml.dist). Run this command to test all code changes:
+The project uses the [PHP_CodeSniffer](https://github.com/squizlabs/php_codesniffer) linter tool to enforce coding standards in the [PHP source](https://imagettftextblur.agjgd.org/source/), [unit tests](https://github.com/andrewgjohnson/imagettftextblur/tree/master/tests) and [examples](https://imagettftextblur.agjgd.org/examples/). The project uses the PHP_CodeSniffer [PSR-12](https://www.php-fig.org/psr/psr-12/) ruleset defined in the [PHP_CodeSniffer configuration file](https://github.com/andrewgjohnson/imagettftextblur/blob/master/phpcs.xml.dist). Run this command to test all code changes:
 
     composer lint
 
@@ -34,7 +34,7 @@ The project’s online documentation is available at [imagettftextblur.agjgd.org
 
 ### Submitting Changes
 
-Please send a [GitHub pull request](https://github.com/andrewgjohnson/imagettftextblur/pull/new/master) with a clear list of what you’ve done (read more about [pull requests](https://help.github.com/articles/about-pull-requests/)). Please follow our coding conventions (above) and make sure all of your commits are atomic (one feature per commit). Please use our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) when submitting pull requests.
+Please send a [GitHub pull request](https://github.com/andrewgjohnson/imagettftextblur/pull/new/master) with a clear list of what you’ve done (read more about [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)). Please follow our coding conventions (above) and make sure all of your commits are atomic (one feature per commit). Please use our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) when submitting pull requests.
 
 Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:
 

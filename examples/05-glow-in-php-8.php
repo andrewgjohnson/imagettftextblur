@@ -36,7 +36,7 @@ if (file_exists('../source/imagettftextblur.php')) {
 $width           = 600;
 $height          = 300;
 $size            = 20;
-$font            = dirname(__FILE__) . '/arial.ttf';
+$font            = dirname(__FILE__) . '/NotoSans-Regular.ttf';
 $string          = 'This is a PHP 8+ example that is glowing';
 
 // Calculate the text size in advance
@@ -78,7 +78,7 @@ imagettftextblur(
 );
 
 // Place the text onto our image
-imagettftextblur(
+imagettftext(
     $im,
     $size,
     0,

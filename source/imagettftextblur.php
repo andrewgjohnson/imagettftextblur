@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagettftextblur v1.3.3
+ * Imagettftextblur v1.4.0
  *
  * Copyright (c) 2013-2026 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -55,8 +55,8 @@ if (!function_exists('imagettftextblur')) {
      * @param int               $x                         The coordinates given by x and y will define the basepoint of
      * the first character (roughly the lower-left corner of the character). This is different from the imagestring(),
      * where x and y define the upper-left corner of the first character. For example, "top left" is 0, 0.
-     * @param int               $y                         The y-ordinate. This sets the position of the fonts baseline,
-     * not the very bottom of the character.
+     * @param int               $y                         The y-ordinate. This sets the position of the font’s
+     * baseline, not the very bottom of the character.
      * @param int               $color                     The color index. Using the negative of a color index has the
      * effect of turning off antialiasing. See imagecolorallocate().
      * @param string            $fontFilename              The path to the TrueType font you wish to use.
@@ -116,7 +116,7 @@ if (!function_exists('imagettftextblur')) {
      * horizontally. Returns FALSE on error.
      */
     function imagettftextblur(
-        &$image,
+        $image,
         $size,
         $angle,
         $x,
@@ -128,6 +128,9 @@ if (!function_exists('imagettftextblur')) {
         $blurIntensityOrBlurFilter = null,
         $blurFilter = null
     ) {
+        // Determine if PHP 8+ is being used
+        $isPhp8 = version_compare(PHP_VERSION, '8.0.0', '>=');
+
         // If the $optionsOrBlurIntensity parameter is an array we assume the caller is using the PHP 8+ version of
         // imagettftext() with the $options parameter otherwise we assume the PHP 5/7 version is being used without the
         // $options parameter
@@ -165,6 +168,9 @@ if (!function_exists('imagettftextblur')) {
                 imagesx($image),
                 imagesy($image)
             );
+            if ($temporaryImage === false) {
+                return false;
+            }
 
             // Fill $temporaryImage with a black background
             imagefill(
@@ -175,7 +181,7 @@ if (!function_exists('imagettftextblur')) {
             );
 
             // Add white text to $temporaryImage with the function call’s parameters
-            $imagettftext = version_compare(PHP_VERSION, '8.0.0', '>=') ? imagettftext(
+            $imagettftext = $isPhp8 ? imagettftext(
                 $temporaryImage,
                 $size,
                 $angle,
@@ -203,12 +209,14 @@ if (!function_exists('imagettftextblur')) {
                 }
 
                 // Set $colorOpacity based on $color’s transparency
-                $colorData    = imagecolorsforindex($image, $color);
+                $colorData    = imagecolorsforindex($image, $color < 0 ? abs($color) : $color);
                 $colorOpacity = (127 - $colorData['alpha']) / 127;
 
                 // Loop through each pixel in $temporaryImage
-                for ($temporaryX = 0; $temporaryX < imagesx($temporaryImage); $temporaryX++) {
-                    for ($temporaryY = 0; $temporaryY < imagesy($temporaryImage); $temporaryY++) {
+                $temporaryWidth  = imagesx($temporaryImage);
+                $temporaryHeight = imagesy($temporaryImage);
+                for ($temporaryX = 0; $temporaryX < $temporaryWidth; $temporaryX++) {
+                    for ($temporaryY = 0; $temporaryY < $temporaryHeight; $temporaryY++) {
                         // $visibility is the grayscale of the current pixel multiplied by $colorOpacity
                         $visibility = (imagecolorat(
                             $temporaryImage,
@@ -231,17 +239,19 @@ if (!function_exists('imagettftextblur')) {
                             );
 
                             // Set the current pixel in $image
+                            $pixelColor = imagecolorallocatealpha(
+                                $image,
+                                $colorData['red'],
+                                $colorData['green'],
+                                $colorData['blue'],
+                                (int)round((1 - $visibility) * 127)
+                            );
+
                             imagesetpixel(
                                 $image,
                                 $temporaryX,
                                 $temporaryY,
-                                imagecolorallocatealpha(
-                                    $image,
-                                    $colorData['red'],
-                                    $colorData['green'],
-                                    $colorData['blue'],
-                                    (int)round((1 - $visibility) * 127)
-                                )
+                                $pixelColor
                             );
                         }
                     }
@@ -249,7 +259,7 @@ if (!function_exists('imagettftextblur')) {
             }
 
             // Destroy our $temporaryImage
-            version_compare(PHP_VERSION, '8.0.0', '<') && imagedestroy($temporaryImage);
+            !$isPhp8 && imagedestroy($temporaryImage);
 
             if ($returnArray === $returnArrayDefault) {
                 // Return false if $returnArray hasn’t changed to indicate a failure
@@ -260,7 +270,7 @@ if (!function_exists('imagettftextblur')) {
             }
         } else {
             // Return a call to imagettftext() as no $blurIntensity was received
-            return version_compare(PHP_VERSION, '8.0.0', '>=') ? imagettftext(
+            return $isPhp8 ? imagettftext(
                 $image,
                 $size,
                 $angle,

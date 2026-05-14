@@ -17,6 +17,20 @@
 
 **imagettftextblur** is an [agjgd](https://agjgd.org) project.
 
+## Examples
+
+    // In PHP 8.0 a ninth parameter ($options) was added to imagettftext()
+    imagettftext($im, 20, 0, 0, 0, $color, $font, $string, array()); // Add text to a GD image
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array()); // This works the same as the line above
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array(), 1); // This will add the same text only blurred
+
+    // We also support previous versions of PHP back to 5.0 and the previous version of imagettftext()
+    imagettftext($im, 20, 0, 0, 0, $color, $font, $string); // Add text to a GD image
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string); // This works the same as the line above
+    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1); // This will add the same text only blurred
+
+There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org/examples/).
+
 ## Usage
 
 ### With Composer
@@ -35,29 +49,15 @@ or add this to the `require` section of your composer.json file:
 
 ### Without Composer
 
-To use without Composer add an [include](http://php.net/manual/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
+To use without Composer add an [include](https://www.php.net/manual/en/function.include.php) to the [`imagettftextblur.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagettftextblur/master/source/imagettftextblur.php).
 
     include 'source/imagettftextblur.php';
-
-## Examples
-
-    // In PHP 8.0 a ninth parameter ($options) was added to imagettftext()
-    imagettftext($im, 20, 0, 0, 0, $color, $font, $string, array()); // Add text to a GD image
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array()); // This works the same as the line above
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, array(), 1); // This will add the same text only blurred
-
-    // We also support previous versions of PHP back to 5.0 and the previous version of imagettftext()
-    imagettftext($im, 20, 0, 0, 0, $color, $font, $string); // Add text to a GD image
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string); // This works the same as the line above
-    imagettftextblur($im, 20, 0, 0, 0, $color, $font, $string, 1); // This will add the same text only blurred
-
-There are [other examples](https://github.com/andrewgjohnson/imagettftextblur/tree/master/examples) included in the GitHub repository and on [imagettftextblur.agjgd.org](https://imagettftextblur.agjgd.org/examples/).
 
 ## Help Requests
 
 Please post any questions in the [discussions area](https://github.com/andrewgjohnson/imagettftextblur/discussions) on GitHub if you need help.
 
-If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/imagettftextblur/issues/new) on GitHub. When submitting an issue please use our [issue template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/ISSUE_TEMPLATE.md).
+If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/imagettftextblur/issues/new) on GitHub. When submitting an issue please use our [issue templates](https://github.com/andrewgjohnson/imagettftextblur/tree/master/.github/ISSUE_TEMPLATE).
 
 ## Contributing
 
@@ -76,7 +76,7 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
  * [Imgbot (@ImgBotApp)](https://github.com/ImgBotApp)
 
-Our [security policies and procedures](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/SECURITY.md) comes via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagettftextblur/tree/master/.github/ISSUE_TEMPLATE) comes via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [mountains photo](https://unsplash.com/photos/qJvpykJ5SKs) comes via [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm).
+Our [security policies and procedures](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/SECURITY.md) come via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagettftextblur/tree/master/.github/ISSUE_TEMPLATE) come via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [mountains photo](https://unsplash.com/photos/qJvpykJ5SKs) comes via [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm).
 
 ## Changelog
 

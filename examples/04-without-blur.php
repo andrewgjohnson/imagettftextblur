@@ -36,8 +36,8 @@ if (file_exists('../source/imagettftextblur.php')) {
 $width           = 600;
 $height          = 300;
 $size            = 20;
-$font            = dirname(__FILE__) . '/arial.ttf';
-$string          = 'This is an example that isn\'t blurry';
+$font            = dirname(__FILE__) . '/NotoSans-Regular.ttf';
+$string          = 'This is an example that isn’t blurry';
 
 // Calculate the text size in advance
 $textDimensions  = imagettfbbox($size, 0, $font, $string);

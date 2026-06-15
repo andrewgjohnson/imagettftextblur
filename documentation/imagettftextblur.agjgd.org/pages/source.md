@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Source
+layout:    default
+title:     Source • imagettftextblur
 permalink: /source/
-nav:       2
+nav_order: 2
+nav_text:  Source
 ---
 
 # Source
@@ -10,4 +11,6 @@ nav:       2
 [**imagettftextblur.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/source/imagettftextblur.php)
 
 {% capture source %}{% include source/imagettftextblur.php %}{% endcapture %}
-<pre><code>{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+<div class="highlight">
+    <pre><code>{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+</div>

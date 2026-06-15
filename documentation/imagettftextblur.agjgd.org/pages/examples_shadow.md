@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Examples&#58; Shadow
+layout:    default
+title:     Shadow • Examples • imagettftextblur
 permalink: /examples/shadow/
 ---
 

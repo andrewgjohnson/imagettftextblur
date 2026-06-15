@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Examples&#58; Glow
+layout:    default
+title:     Glow • Examples • imagettftextblur
 permalink: /examples/glow/
 ---
 

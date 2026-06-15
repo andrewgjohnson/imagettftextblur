@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Menu
+layout:    default
+title:     Menu • imagettftextblur
 permalink: /menu/
 ---
 
@@ -12,7 +12,9 @@ permalink: /menu/
     {% for page in pages_sorted %}
         {% if page.nav %}
             <li>
-                <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title | replace: site_title_with_semicolon, '' }}</a>
+                <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">
+                    {{ page.title | replace: site_title_with_semicolon, '' }}
+                </a>
             </li>
         {% endif %}
     {% endfor %}

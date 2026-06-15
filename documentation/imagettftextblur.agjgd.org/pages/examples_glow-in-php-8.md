@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Examples&#58; Glow in PHP 8+
+layout:    default
+title:     Glow in PHP 8+ • Examples • imagettftextblur
 permalink: /examples/glow-in-php-8/
 ---
 

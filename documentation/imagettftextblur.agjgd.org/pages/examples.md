@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Examples
+layout:    default
+title:     Examples • imagettftextblur
 permalink: /examples/
-nav:       3
+nav_order: 3
+nav_text:  Examples
 ---
 
 # Examples

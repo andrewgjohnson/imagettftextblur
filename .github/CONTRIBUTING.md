@@ -32,6 +32,27 @@ The project’s online documentation is available at [imagettftextblur.agjgd.org
 
     jekyll serve
 
+If you are on Ruby 4.0 or later you may encounter a gem conflict between `jekyll-remote-theme` and `jekyll-sass-converter`. If so, first create a link inside the project root pointing to the theme repository's layouts (this only needs to be done once).
+
+On Windows:
+
+    mklink /J _layouts "..\open-source-documentation-jekyll-theme\_layouts"
+    mklink /J assets "..\open-source-documentation-jekyll-theme\assets"
+
+On macOS or Linux:
+
+    ln -s ../open-source-documentation-jekyll-theme/_layouts _layouts
+    ln -s ../open-source-documentation-jekyll-theme/assets assets
+
+Then create a `_config.local.yml` file in the project root containing:
+
+    plugins:
+      - jekyll-redirect-from
+
+Then run Jekyll with both config files instead:
+
+    jekyll serve --config _config.yml,_config.local.yml
+
 ### Submitting Changes
 
 Please send a [GitHub pull request](https://github.com/andrewgjohnson/imagettftextblur/pull/new/master) with a clear list of what you’ve done (read more about [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)). Please follow our coding conventions (above) and make sure all of your commits are atomic (one feature per commit). Please use our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) when submitting pull requests.

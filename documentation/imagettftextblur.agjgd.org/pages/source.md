@@ -11,4 +11,6 @@ nav_text:  Source
 [**imagettftextblur.php**](https://github.com/andrewgjohnson/imagettftextblur/blob/master/source/imagettftextblur.php)
 
 {% capture source %}{% include source/imagettftextblur.php %}{% endcapture %}
-<pre><code>{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+<div class="highlight">
+    <pre><code>{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+</div>

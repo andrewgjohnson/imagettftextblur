@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Examples&#58; With Blur
+layout:    default
+title:     With Blur • Examples • imagettftextblur
 permalink: /examples/with-blur/
 ---
 

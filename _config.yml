@@ -1,32 +1,59 @@
-title:        imagettftextblur
-name:         imagettftextblur
-description:  imagettftextblur is a drop-in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
-author:       Andrew G. Johnson
-author_email: andrew@andrewgjohnson.com
-email:        andrew@andrewgjohnson.com
-url:          "https://imagettftextblur.agjgd.org"
-includes_dir: .
-layouts_dir:  documentation/imagettftextblur.agjgd.org/layouts
-exclude:      [
-               .github,
-               .github/*.md,
-               .github/*.yml,
-               .github/CODEOWNERS,
-               .github/ISSUE_TEMPLATE,
-               .github/ISSUE_TEMPLATE/*.yml,
-               CHANGELOG.md,
-               CNAME,
-               composer.json,
-               composer.lock,
-               documentation/README.md,
-               examples/*.php,
-               examples/*.ttf,
-               LICENSE,
-               README.md,
-               source,
-               vendor,
-               vendor/*.md,
-               phpcs.xml.dist,
-               tests,
-               phpunit.xml.dist
-              ]
+plugins:
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+
+remote_theme:         andrewgjohnson/open-source-documentation-jekyll-theme
+title:                imagettftextblur
+name:                 imagettftextblur
+description:          imagettftextblur is a drop-in replacement for imagettftext with added parameters to add blur, glow and shadow effects to your PHP GD images.
+author:               Andrew G. Johnson
+author_email:         andrew@andrewgjohnson.com
+email:                andrew@andrewgjohnson.com
+url:                  https://imagettftextblur.agjgd.org
+includes_dir:         .
+footer_text:          agjgd.org
+footer_url:           https://agjgd.org
+copyright_year_start: 2013
+syntax_highlighting:  true
+cover_image:          mountains
+syntax_highlighting:  true
+custom_head:          <script>if (location.pathname == "/documentation" || location.pathname.indexOf("/documentation/") === 0) window.location.href = "/";</script>
+social_links:
+  - platform:         twitter
+    url:              https://twitter.com/agjgdphp
+    label:            imagettftextblur on Twitter
+  - platform:         github
+    url:              https://github.com/andrewgjohnson/imagettftextblur
+    label:            imagettftextblur on GitHub
+  - platform:         packagist
+    url:              https://packagist.org/packages/andrewgjohnson/imagettftextblur
+    label:            imagettftextblur on Packagist
+  - platform:         patreon
+    url:              https://www.patreon.com/agjopensource
+    label:            imagettftextblur on Patreon
+  - platform:         x
+    url:              https://x.com/agjgdphp
+    label:            imagettftextblur on 𝕏
+exclude:              [
+                       .github,
+                       .github/*.md,
+                       .github/*.yml,
+                       .github/CODEOWNERS,
+                       .github/ISSUE_TEMPLATE,
+                       .github/ISSUE_TEMPLATE/*.yml,
+                       CHANGELOG.md,
+                       CNAME,
+                       composer.json,
+                       composer.lock,
+                       documentation/README.md,
+                       examples/*.php,
+                       examples/*.ttf,
+                       LICENSE,
+                       README.md,
+                       source,
+                       vendor,
+                       vendor/*.md,
+                       phpcs.xml.dist,
+                       tests,
+                       phpunit.xml.dist
+                      ]

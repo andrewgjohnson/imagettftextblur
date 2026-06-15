@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; Source
+layout:    default
+title:     Source • imagettftextblur
 permalink: /source/
-nav:       2
+nav_order: 2
+nav_text:  Source
 ---
 
 # Source

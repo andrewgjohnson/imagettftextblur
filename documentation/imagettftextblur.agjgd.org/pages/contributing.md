@@ -1,5 +1,4 @@
 ---
-layout:    redirect
-permalink: /contributing/
-redirect:  /contribute/
+permalink:   /contributing/
+redirect_to: /contribute/
 ---

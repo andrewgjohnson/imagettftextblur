@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagettftextblur&#58; License
+layout:    default
+title:     License • imagettftextblur
 permalink: /license/
-nav:       5
+nav_order: 5
+nav_text:  License
 ---
 
 # License

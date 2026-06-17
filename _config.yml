@@ -11,6 +11,7 @@ author_email:         andrew@andrewgjohnson.com
 email:                andrew@andrewgjohnson.com
 url:                  https://imagettftextblur.agjgd.org
 includes_dir:         .
+favicon:              https://github.githubassets.com/favicon.ico
 footer_text:          agjgd.org
 footer_url:           https://agjgd.org
 copyright_year_start: 2013

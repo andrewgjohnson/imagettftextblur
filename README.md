@@ -7,7 +7,7 @@
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagettftextblur/issues)
 [![Patreon](https://imagettftextblur.agjgd.org/documentation/imagettftextblur.agjgd.org/images/patreon-badge.png)](https://patreon.com/agjopensource)
 
-<p align="center"><a href="https://imagettftextblur.agjgd.org/" title=""><img src="https://imagettftextblur.agjgd.org/documentation/imagettftextblur.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+<p align="center"><a href="https://imagettftextblur.agjgd.org/" title=""><img src="documentation/imagettftextblur.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
 
 ## Description
 
@@ -76,7 +76,7 @@ Full list of contributors:
  * [Philip van Heemstra (@vHeemstra)](https://github.com/vHeemstra)
  * [Imgbot (@ImgBotApp)](https://github.com/ImgBotApp)
 
-Our [security policies and procedures](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/SECURITY.md) come via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagettftextblur/tree/master/.github/ISSUE_TEMPLATE) come via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [Jekyll theme](https://github.com/andrewgjohnson/open-source-documentation-jekyll-theme) was released by [Andrew G. Johnson](https://github.com/andrewgjohnson) for documentation of his open source projects.
+Our [security policies and procedures](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/SECURITY.md) come via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagettftextblur/tree/master/.github/ISSUE_TEMPLATE) come via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagettftextblur/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [Jekyll theme](https://github.com/andrewgjohnson/open-source-documentation-jekyll-theme) was released by [Andrew G. Johnson](https://github.com/andrewgjohnson).
 
 ## Changelog
 

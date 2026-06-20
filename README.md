@@ -5,9 +5,9 @@
 [![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagettftextblur.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagettftextblur/graphs/contributors)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagettftextblur.png?colorB=0366d6&style=flat-square&logoColor=white&logo=packagist)](https://packagist.org/packages/andrewgjohnson/imagettftextblur/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagettftextblur.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagettftextblur/issues)
-[![Patreon](https://imagettftextblur.agjgd.org/documentation/imagettftextblur.agjgd.org/images/patreon-badge.png)](https://patreon.com/agjopensource)
+[![Patreon](documentation/images/patreon-badge.png)](https://patreon.com/agjopensource)
 
-<p align="center"><a href="https://imagettftextblur.agjgd.org/" title=""><img src="documentation/imagettftextblur.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+<p align="center"><a href="https://imagettftextblur.agjgd.org/" title=""><img src="documentation/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
 
 ## Description
 

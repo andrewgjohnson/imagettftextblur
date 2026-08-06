@@ -15,7 +15,7 @@
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- * PHP version 5
+ * PHP version 8
  *
  * @category  Andrewgjohnson
  * @package   Imagettftextblur
@@ -25,11 +25,11 @@
  * @link      https://github.com/andrewgjohnson/imagettftextblur
  */
 
-// Include the imagettftextblur source if you’re not using Composer
-if (file_exists('../source/imagettftextblur.php')) {
-    require_once '../source/imagettftextblur.php';
+// Load imagettftextblur (and the AgjGd class it wraps) via Composer’s autoloader
+if (file_exists('../vendor/autoload.php')) {
+    require_once '../vendor/autoload.php';
 } elseif (!function_exists('imagettftextblur')) {
-    die('imagettftextblur not found');
+    die('imagettftextblur not found; run composer install');
 }
 
 // Set the parameters for our image

@@ -24,12 +24,11 @@
         }
     ],
     "require": {
-        "php": ">=5.0.0",
-        "ext-gd": "*"
+        "php": ">=8.0.0",
+        "ext-gd": "*",
+        "andrewgjohnson/agjgd": "^2.0"
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-        "phpcompatibility/php-compatibility": "^9.3",
         "phpunit/phpunit": "^12.5",
         "squizlabs/php_codesniffer": "^3.13"
     },
@@ -37,6 +36,11 @@
         "files": [
             "source/imagettftextblur.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AndrewGJohnson\\Imagettftextblur\\Tests\\": "tests/"
+        }
     },
     "scripts": {
         "lint": "@php vendor/bin/phpcs",
@@ -46,10 +50,5 @@
             "@lint",
             "@phpunit"
         ]
-    },
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
     }
 }
